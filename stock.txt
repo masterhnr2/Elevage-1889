@@ -1,0 +1,87 @@
+path = os.path.join(os.getcwd(), "Pages", "Page_2.py")
+backg_path = os.path.join(os.getcwd(), "Data", "Expo_univ_1889_Elevage_enfants_premier_age_Finistere_41.jpg")
+
+with open(backg_path, "rb") as image_file:
+    encoded_image = base64.b64encode(image_file.read()).decode()
+
+#st.sidebar.success('select page')
+
+#st.page_link(path, icon="🔥")
+
+# Define the HTML template with inline CSS for background and button
+html_template = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Asset Development </title>
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            background-image: url(data:image/jpg;base64,{encoded_image});
+            background-size: full;
+            background-repeat: no-repeat;
+            background-position: center;
+        }}
+        
+    </style>
+</head>
+<body>
+</body>
+</html>
+"""
+
+# Use Streamlit to render the HTML template
+
+components.html(html_template)
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+page_bg_img = '''
+<style>
+body {
+background-image: url("http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272039/high");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+page_bg_img = '''
+<style>
+body {
+background-image: url("data:image/png;base64,%s");
+background-size: cover;
+}
+</style>
+''' % encoded_image
+    
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+html_template = f"""
+<p> Mavuika </p>
+"""
+
+style = f'''
+<style>
+body {{
+            font-family: Arial, sans-serif;
+            background-image: url(data:image/jpg;base64,{backg_path});
+     }}
+</style>
+'''
+
+# Use Streamlit to render the HTML template
+
+st.html(html_template)
+st.markdown(style, unsafe_allow_html=True)
