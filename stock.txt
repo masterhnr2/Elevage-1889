@@ -1,3 +1,185 @@
+
+with rio.open(backg_path) as src:
+    
+    img = src.read()
+
+    min_lon, min_lat, max_lon, max_lat = src.bounds
+    bounds_orig = [[min_lat, min_lon], [max_lat, max_lon]]
+
+    centre_lon = bounds_orig[0][1] + (bounds_orig[1][1] - bounds_orig[0][1])/2
+    centre_lat = bounds_orig[0][0] + (bounds_orig[1][0] - bounds_orig[0][0])/2
+
+#st.set_page_config(
+#    layout="wide",
+#)
+
+#st.sidebar.success('select page')
+
+#st.page_link(path, icon="🔥")
+
+
+
+#m = folium.Map(crs='Simple', zoom_start=0, tiles=None) #
+m = folium.Map(location=[centre_lat, centre_lon], zoom_start=9)
+
+aldrune_overlay = folium.raster_layers.ImageOverlay(
+    img.transpose(1, 2, 0),
+    bounds=bounds_orig,
+    opacity=0.5,
+    zindex=1)
+
+#aldrune_overlay.add_to(m)
+#folium.LayerControl().add_to(m)
+#m.fit_bounds(bounds=bounds_orig)
+
+st_data = st_folium(m, use_container_width=True)
+
+
+------------------------------------
+
+## LC08 RGB Image
+in_path = os.path.join(os.getcwd(), "Data", "Carte_SRC_def.tif")
+
+dst_crs = 'EPSG:4326'
+
+with rio.open(in_path) as src:
+    
+    img = src.read()
+    
+
+    src_crs = src.crs['init'].upper()
+    min_lon, min_lat, max_lon, max_lat = src.bounds
+    
+## Conversion from UTM to WGS84 CRS
+bounds_orig = [[min_lat, min_lon], [max_lat, max_lon]]
+
+bounds_fin = []
+ 
+for item in bounds_orig:   
+    #converting to lat/lon
+    lat = item[0]
+    lon = item[1]
+    
+    proj = Transformer.from_crs(int(src_crs.split(":")[1]), int(dst_crs.split(":")[1]), always_xy=True)
+
+    lon_n, lat_n = proj.transform(lon, lat)
+    
+    bounds_fin.append([lat_n, lon_n])
+
+# Finding the centre latitude & longitude    
+centre_lon = bounds_fin[0][1] + (bounds_fin[1][1] - bounds_fin[0][1])/2
+centre_lat = bounds_fin[0][0] + (bounds_fin[1][0] - bounds_fin[0][0])/2
+
+m = folium.Map(location=[centre_lat, centre_lon],
+                   tiles='Stamen Terrain', zoom_start = 10)
+
+# Overlay raster (RGB) called img using add_child() function (opacity and bounding box set)
+m.add_child(folium.raster_layers.ImageOverlay(img.transpose(1, 2, 0), opacity=.7, 
+                                 bounds = bounds_fin))
+
+
+
+-------------------------------------------------------
+
+
+backg_path = os.path.join(os.getcwd(), "Data", "Carte blanche.jpg")
+#backg_path = os.path.join(os.getcwd(), "Data", "Carte_SRC_def.tif")
+
+
+#st.set_page_config(
+#    layout="wide",
+#)
+
+#st.sidebar.success('select page')
+
+#st.page_link(path, icon="🔥")
+
+#image = "http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272005"
+
+widh_media = 2500
+height_media = 1878
+
+#st.image(image)
+
+
+#m = folium.Map(crs='Simple', zoom_start=0, tiles=None) #
+m = folium.Map([0, 0], zoom_start=2)
+
+aldrune_overlay = folium.raster_layers.ImageOverlay(
+    image= backg_path,
+    bounds=[[49, -5], [47, -2]],
+    opacity=0.5,
+    zindex=1)
+
+aldrune_overlay.add_to(m)
+folium.LayerControl().add_to(m)
+#m.fit_bounds(bounds=[[0, 0], [1800, 2000]])
+
+
+--------------------------
+
+places = [
+    {"name": "Paris — University", "lat": 48.8566, "lon": 2.3522, "desc": "University years"},
+    {"name": "Tehran — Birthplace", "lat": 35.6892, "lon": 51.3890, "desc": "Where it all began"},
+    {"name": "Berlin — Future Work", "lat": 52.52, "lon": 13.405, "desc": "Dream job city"}
+]
+
+
+st.markdown(
+        r"""
+        <style>
+        .appview-container .main .block-container{{
+        padding-top: {padding_top}rem;    }}
+        </style>
+        """, unsafe_allow_html=True
+    )
+
+
+
+--------------------------------------------------------------------------------
+
+{
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #dbcfb7;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+------------------------------------------------------------
+
+
+@st.dialog("Ville", width="large")
+def vote(item):
+    st.write(item)
+
+
+if "vote" not in st.session_state:
+    if st.button("Trebeurdin"):
+        #vote("Trebeurdin")
+        add_selectbox = st.sidebar.selectbox(
+        "How would you like to be contacted?",
+        ("Email", "Home phone", "Mobile phone")
+        )
+else:
+    f"You voted for {st.session_state.vote['item']} because {st.session_state.vote['reason']}"
+
+    if st.button("Trebeurdin"):
+        vote("Trebeurdin")
+    if st.button("Brest"):
+        vote("Brest")
+
+
+
+TEST HTML --------------------------------------------
+
+
+
 path = os.path.join(os.getcwd(), "Pages", "Page_2.py")
 backg_path = os.path.join(os.getcwd(), "Data", "Expo_univ_1889_Elevage_enfants_premier_age_Finistere_41.jpg")
 
