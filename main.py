@@ -10,8 +10,8 @@ with open('style2.css') as f:
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
 
-backg_path = os.path.join(os.getcwd(), "Data", "Carte_SRC_def_img.tif")
-
+backg_path = os.path.join(os.getcwd(), "Data", "Carte_blanche_3_2.tif")
+#backg_path = os.path.join(os.getcwd(), "Data", "Carte_SRC_def_img.tif")
 
 
 with rio.open(backg_path) as src:
