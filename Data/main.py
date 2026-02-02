@@ -12,7 +12,7 @@ def save_map(m, name):
     print("Saved:", filename)
     return filename
 
-backg_path = os.path.join(os.getcwd(), "Data", "Carte_blanche_3_2.tif")
+backg_path = os.path.join(os.getcwd(), "data", "Carte_blanche_3_2.tif")
 #backg_path = os.path.join(os.getcwd(), "Data", "Carte_SRC_def_img.tif")
 
 
