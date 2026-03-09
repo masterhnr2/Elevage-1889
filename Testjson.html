@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+</head>
+
+<script id="myJson" type="application/json" src="C:\Users\aryod\Repositories\Elevage-1889-site\test.json">
+ { 
+   name: 'Foo' 
+ }
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        var x = JSON.parse($('#myJson').html());
+        alert(x.name); //Foo
+        console.log(x)
+     });
+</script>
+<body>
+
+</body>
+</html>
