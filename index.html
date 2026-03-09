@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
     
             <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+                initial-scale=10.5, maximum-scale=1.0, user-scalable=no" />
             <style>
                 #map_c61cbc7ff91b1cfb21861bd3983edc54 {
                     position: relative;
@@ -63,11 +63,42 @@
                         -ms-interpolation-mode: nearest-neighbor; /* ie */
                     }
                 </style>
-            
+ 
+                <style>
+                    .lightboxContainer {
+                    align-items: center;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: center;
+                    left: 65%;
+                    position: fixed;
+                    right: 0;
+                    top: 0;
+                    z-index: 10000;
+                    
+                    }
+                </style>
+
+                <style>
+                    .boite {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    background-color: white;
+
+                    }
+                </style>
         
 </head>
 <body>
-    
+            <div class="lightboxContainer">
+                <div class="boite">
+                    <p>aajajajajajajaj</p>
+                </div>
+            </div>
     
             <div class="folium-map" id="map_c61cbc7ff91b1cfb21861bd3983edc54" ></div>
         

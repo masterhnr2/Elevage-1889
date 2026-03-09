@@ -212,6 +212,10 @@ save_map(m9, "09_time_series.html")
 # Example 10: GeoJSON polygon with tooltip and choropleth-style coloring (simple internal data)
 # ----------------------------
 # Create a tiny GeoJSON with two simplistic "regions" (fake)
+
+a = [[[2.34, 48.86], [2.36, 48.86], [2.36, 48.85], [2.34, 48.85], [2.34, 48.86]]]
+b = [48.8566, 2.3522]
+
 geojson_small = {
     "type": "FeatureCollection",
     "features": [
