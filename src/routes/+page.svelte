@@ -14,7 +14,7 @@
  `
 </script>
 
-
+<Menu/>
 
 <div id="mypopover" popover>
                 <div class="lightboxContainer">

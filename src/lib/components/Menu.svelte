@@ -5,8 +5,9 @@
             <li>
                 <a href="/page1">PAGE 1</a>
             </li>
+
             <li>
-                <a href="/page1/sub">PAGE 2</a>
+                <a href="/folium">FOLIUM</a>
             </li>
         </ul>
 

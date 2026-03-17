@@ -1,6 +1,7 @@
 <script>
     import Menu from '$lib/components/Menu.svelte';
     import Popover from '$lib/components/Popover.svelte';
+    import Img from '$lib/assets/Expo_univ_1889_Elevage_enfants_premier_age_Finistere_7.jpg'
 
 
 
@@ -14,6 +15,7 @@
 <button  type="button" popovertarget="popover_Ploudalmezean">Ploudalmezean</button>
 <button  type="button" popovertarget="popover_Concarnot">Concarnot</button>
 
+<img src={Img} alt="Image" />
 
 <Popover/>
 
