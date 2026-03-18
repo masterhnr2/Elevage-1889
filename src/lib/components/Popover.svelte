@@ -8,7 +8,6 @@
 
 </script>
 
-
     <div id="popover_Quimper" popover>
         <div class="lightboxContainer">
             <div id="boite">
@@ -16,6 +15,7 @@
             </div>
         </div>
     </div>
+
 
     <div id="popover_Brest" popover>
         <div class="lightboxContainer">
@@ -52,7 +52,6 @@
 
 <style>
 
-
                 .lightboxContainer {
                     align-items: center;
                     bottom: 0;
@@ -60,9 +59,8 @@
                     justify-content: center;
                     left: 65%;
                     position: fixed;
-                    right: 0;
-                    top: 0;
                     z-index: 10000;
+                    
                     
                     }
 
@@ -74,6 +72,7 @@
                     justify-content: space-evenly;
                     width: 100%;
                     background-color: rgb(202, 167, 70);
+                    overflow-y: auto;
 
                     }
                 </style>

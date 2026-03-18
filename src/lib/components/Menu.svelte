@@ -3,6 +3,9 @@
     <nav>
         <ul>
             <li>
+                <a href="/">ACCUEUIL</a>
+            </li>
+            <li>
                 <a href="/page1">PAGE 1</a>
             </li>
 

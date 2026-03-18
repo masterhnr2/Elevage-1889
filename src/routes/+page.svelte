@@ -1,29 +1,34 @@
 
 <script>
+
     import Menu from '$lib/components/Menu.svelte'
-    import Info from '$lib/components/Info.svelte'
+    import IconeLivre from '$lib/components/Cantons/Icone_livre.svelte';
 
-    /* import snarkdown from 'snarkdown'*/
-
-  let md = `
-    # Hello
-
-    ## How are you?
-
-    This text is _bold_
- `
 </script>
 
 <Menu/>
 
-<div id="mypopover" popover>
-                <div class="lightboxContainer">
-                    <div class="boite">
-                        <p>aajajajajajajaj</p>
-                    </div>
-                </div>
-            </div>
+<h1><strong>Exposition universelle de 1889 Elevage des enfants du premier âge - Finistère</strong></h1>
 
-<div class="folium-map" id="map_f8e71b8a1d842be02ac30c1839b12e94" ></div>
+<IconeLivre/>
+
+
+<style>
+    h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: xx-large;
+        text-transform: uppercase;
+        justify-self: center;
+        text-justify: inter-cluster;
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 10%;
+        color: #ae9784;
+
+    }
+
+</style>
+
 
 
