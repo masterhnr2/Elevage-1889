@@ -55,6 +55,7 @@
                 .lightboxContainer {
                     align-items: center;
                     bottom: 0;
+                    top: 0;
                     display: flex;
                     justify-content: center;
                     left: 65%;
