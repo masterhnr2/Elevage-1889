@@ -1,54 +1,80 @@
 <script>
 
-    import Quimper from '$lib/components/Cantons/Quimper.svelte';
-    import Brest from '$lib/components/Cantons/Brest.svelte'
-    import Douarnenez from './Cantons/Douarnenez.svelte';
-    import Ploudalmezean from './Cantons/Ploudalmezean.svelte';
-    import Concarnot from './Cantons/Concarnot.svelte';
+    import Education from './Cantons/Education.svelte';
+    import Emmaillottement from './Cantons/Emmaillottement.svelte';
+    import Gardiennage from './Cantons/Gardiennage.svelte';
+    import Instruction from '$lib/components/Cantons/Instruction.svelte';
+    import Layette from './Cantons/Layette.svelte';
+    import Allaitement from './Cantons/Allaitement.svelte';
+    import Couchages from '$lib/components/Cantons/Couchages.svelte';
+    import LayetteAssist from './Cantons/Layette_assisté.svelte';
 
 </script>
 
-    <div id="popover_Quimper" popover>
+    <div id="popover_Alaitement" popover>
         <div class="lightboxContainer">
             <div id="boite">
-                <Quimper/>
+                <Allaitement/>
+            </div>
+        </div>
+    </div>
+
+    <div id="popover_Couchage" popover>
+        <div class="lightboxContainer">
+            <div id="boite">
+                <Couchages/>
+            </div>
+        </div>
+    </div>
+
+    <div id="popover_Education" popover>
+        <div class="lightboxContainer">
+            <div id="boite">
+                <Education/>
             </div>
         </div>
     </div>
 
 
-    <div id="popover_Brest" popover>
+    <div id="popover_Emmaillotement" popover>
         <div class="lightboxContainer">
             <div id="boite">
-                <Brest/>
+                <Emmaillottement/>
             </div>
         </div>
     </div>
 
-    <div id="popover_Douarnenez" popover>
+    <div id="popover_Gardiennage" popover>
         <div class="lightboxContainer">
             <div id="boite">
-                <Douarnenez/>
+                <Gardiennage/>
             </div>
         </div>
     </div>
 
-    <div id="popover_Ploudalmezean" popover>
+    <div id="popover_Instruction" popover>
         <div class="lightboxContainer">
             <div id="boite">
-                <Ploudalmezean/>
+                <Instruction/>
             </div>
         </div>
     </div>
 
-    <div id="popover_Concarnot" popover>
+    <div id="popover_Layette" popover>
         <div class="lightboxContainer">
             <div id="boite">
-                <Concarnot/>
+                <Layette/>
             </div>
         </div>
     </div>
 
+    <div id="popover_Layette_assist" popover>
+        <div class="lightboxContainer">
+            <div id="boite">
+                <LayetteAssist/>
+            </div>
+        </div>
+    </div>
 
 <style>
 
