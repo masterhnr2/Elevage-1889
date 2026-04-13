@@ -3,7 +3,7 @@
     <nav>
         <ul>
             <li>
-                <a href="/">ACCUEUIL</a>
+                <a href="/">ACCUEIL</a>
             </li>
             <li>
                 <a href="/page1">PAGE 1</a>
