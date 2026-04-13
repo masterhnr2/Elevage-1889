@@ -13,6 +13,16 @@
                                     center: [48.226403474, -4.4005738835],
                                     crs: L.CRS.EPSG3857,
                                     ...{
+                "maxBounds": [
+                        [
+                        47.022574812,
+                        -6.598916157,
+                        ],
+                        [
+                        49.428498824,
+                        -2.203865007,
+                        ],
+                        ],
                 "zoom": map_zoom,
                 "zoomControl": true,
                 "preferCanvas": false,
