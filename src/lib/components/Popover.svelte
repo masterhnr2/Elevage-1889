@@ -92,13 +92,13 @@
                     }
 
                 #boite {
-                    align-items: center;
+                    align-items: flex-start();
                     display: flex;
                     flex-direction: column;
                     height: 100%;
                     justify-content: space-evenly;
                     width: 100%;
-                    background-color: rgb(202, 167, 70);
+                    background-color: rgb(155, 75, 81);
                     overflow-y: auto;
 
                     }
