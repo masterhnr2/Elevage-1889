@@ -1,16 +1,154 @@
-<h1>Layettes et vêtures des enfants assistés</h1>
-    <br>
-    <p>Bérard Emile Théophile (13 février 1859 - 23 juin 1899) (Administration) ; 1889 ; Finistère. Mage Emile (1836 - 1908) ; Anonyme (Photographe) ; 1860 - 1870 ; Finistère ; Une grande majorité des autres photographies peuvent être attribuées avec certitude à Émile Mage (1836-1908). Ce photographe brestois, membre de la Société française de photographie fréquente Paris où il expose ses photographies aux expositions de 1874 et 1876, pour lesquelles il reçoit une mention honorable. Il est aussi l'auteur de plusieurs séries Types et costumes bretons, éditées au format carte de visite et vues stéréoscopiques, qui figurent les différentes modes régionales et sont largement diffusées, et présentes dans l'album..</p>\
-    <br>
-    <h2>Description</h2>
-    <br>
-    <p>Album in folio comprenant 370 feuillets imprimés et manuscrits, 47 cartes rehaussées des cantons et îles du Finistère recensés, et 102 tirages photographiques. Chaque chapitre ouvre sur une carte du département, la même carte est ainsi reproduite 47 fois, par procédé lithographique, rehaussée en bleu pour les côtes et en rose pour l'arrondissement concerné ; viennent ensuite un à deux feuillets sur lesquels sont contrecollées les photographies. Un chapitre comprend neuf feuillets de formulaires imprimés, complétés à la main et donnant des renseignements sur les objets exposés, les pratiques d'autrefois et celles d'aujourd'hui, selon différentes thématiques : l'allaitement, la nourriture, l'emmaillotement, les vêtements, les modes de couchage, l'instruction et l'éducation, etc. </p>"
+<script>
 
-    <style>
+let dysMode = false;
+
+let audio;
+let playing = false;
+
+function toggleAudio() {
+    if (playing) {
+        audio.pause();
+        audio.currentTime = 0;
+    } else {
+        audio.play();
+    }
+    playing = !playing;
+}
+</script>
+
+<div class="conteneuraudio">
+<audio bind:this={audio} src="/images/Nightclub.mp3"></audio>
+<span class="audiobouton" on:click={toggleAudio}>
+    {playing ? '⏹️' : '🔊'}
+    </span>
+</div>
+
+<button class="dysbouton" on:click={() => dysMode = !dysMode}>
+    {dysMode ? 'Mode normal' : 'Mode dyslexie'}
+</button>
+
+<div class:dys={dysMode}>
+
+<h1> Les vêtures des enfants assistés à Pont-Croix, Pont-L'Abbé et Rosporden </h1> 
+<br> 
+<p>Par «&nbspenfant assisté&nbsp», on entend les enfants placés sous le régime de l'Assistance publique, un ministère dédié à la protection sociale des enfants comme des adultes. Ce sont à la fois des orphelins, des enfants abandonnés ou des enfants maltraités. Pont-L'Abbé et Rosporden sont rattachés par Émile Bérard à Quimper alors que Pont-Croix a ses propres pratiques pour les vêtements des enfants assistés.</p>
+<br>
+<h2> Avant l'enquête par Émile Bérard : une différence entre enfants assistés et enfants </h2> 
+<br> 
+<p>Dans son introduction, Émile Bérard écrit «&nbsples règlements administratifs sur les vêtements des enfants assistés stipulaient qu'à l'âge d'un an les commissions hospitalières délivreraient aux pupilles&nbsp» une première vêture. L'auteur indique que le renouvellement de la vêture se faisait tous les ans jusqu'à 6 ans puis de même de 6 ans à 12 ans. Certains vêtements étaient obligatoires comme les robes ou les vestes dans le cas où les enfants assistaient aux catéchismes ou allaient à l'école primaire.</p>
+<br>
+<p>Pour Pont-L'Abbé et Rosporden avant 1860, l'auteur fait une liste de ce qui est donné par l'hospice, c'est-à-dire par la maison d'assistance pour les personnes démunies. Il y avait une distinction entre les filles et les garçons qui ne se faisait qu'à partir de 6 ans où les vêtements des enfants étaient des miniatures de ceux des adultes.</p>
+<br>
+<p>Les étoffes utilisées pour ces vêtures n'étaient selon les dires de l'auteur que pour les enfants des hospices. La couleur de ces vêtements était brun fauve ou gris fer. Bérard nous informe aussi que leur coupe était «&nbspridicule&nbsp», autrement dit elle était certainement mal faite.</p>
+<br>
+<p>À Pont-Croix, comme pour les deux autres villes, la liste des vêtures est donnée par l'hospice, ce qui engendre des moqueries envers les enfants assistés. Selon Bérard, «&nbspl'hospice [la] délivrait aux nourriciers&nbsp» pour les garçons et les filles.</p>
+<br>
+
+<div class="famille">
+<img src="/images/mega_040.jpg" alt="Une famille de fermiers avec sept enfants."/>
+<figcaption>Photographie d'une famille de sept enfants issue du livre <em>Souvenirs de Bretagne</em> (vers 1860) appartenant au Musée de Bretagne aujourd'hui.</figcaption>
+</div>
+<br>
+<p>Cette photographie nous permet de voir ce que décrit Bérard. Elle fait partie d'une collection de photographies prises par L. Poret. La famille est en costume de civil ou en costume de Basse Bretagne en extérieur.</p>
+<br>
+
+<h2>Au moment où Bérard fait son enquête : des changements pour les vêtures</h2>
+<br>
+<p> Un changement s'opère à partir des années 1860 avec une autre forme de rémunération qui amène à d'autres vêtures. Les vêtures des enfants assistés étaient uniformisées à celles des autres enfants. L'administration hospitalière donnait une somme aux nourriciers, les personnes qui s'occupaient des enfants assistés pour qu'ils fassent confectionner ou confectionnent des vêtements. Selon Bérard, l'administration et les enfants trouvaient ce changement bien. Le lien était meilleur entre les nourriciers et les enfants. Ainsi, des enfants assistés placés dans des familles avaient les mêmes vêtements que ceux des enfants non assistés. Emile Bérard s'en réjouit lui-même avec cette phrase : «&nbspIl était pénible pour un jeune enfant de se trouver seul affublé d'une livrée ridicule au milieu d'enfants de son âge&nbsp».</p>
+<br>
+
+<div class="classe">
+<img src="/images/mega_044.jpg" alt="Photo de classe."/>
+<figcaption>Photographie d'un groupe, d'orphelins certainement, entouré de deux sœurs et d'une femme dans le jardin du manoir de Kerbenez à Plomelin vers les années 1860.</figcaption>
+</div>
+<br>
+
+<p>Plomelin étant au sud ouest de Quimper, la photographie est au cœur du canton choisi pour les enfants assistés. Rare photographie que nous avons pu trouver sur les orphelins du Finistère, celle-ci montre des garçons en costume démontrant l'uniformisation de celui-ci. Cependant, aucune preuve ne permet de dire que ce costume était porté par tous les enfants du Finistère.</p>
+<br>
+<p>Les enfants assistés, selon l'auteur, «&nbsprencontrent plus de facilités à s'établir dans le pays où ils ont été élevés&nbsp».</p>
+
+</div>
+
+<style>
+
+   @font-face {
+    font-family : OpenDyslexic;
+    src: url('/Fonts/open_dyslexic/OpenDyslexic-Bold.otf');
+   }
 
     p {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align : justify;
+        font-family : Arial, Verdana, Sans-serif;
+        font-size : 18px;
+        letter-spacing : 1.5px;
+    }
+
+
+    h1, h2 {
+        text-align : center;
+        font-family : Verdana, sans-serif;
+        font-weight : bold;
+        margin-left : 3%;
+        margin-right : 3%;
+    }
+
+    h2 {
+        margin-left : 5%;
+    }
+
+        .conteneuraudio {
+        display : flex;
+        margin-top : 2%;
+        margin-left : 85%;
+    }
+    .audiobouton {
+        cursor : pointer;
+        font-size : 5rem;
+        user-select : none;
+    }
+
+    .dysbouton {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #3b2224;
+    color: white;
+    font-size: 14px;
+}
+
+.dys p, .dys h1, .dys h2, .dys figcaption {
+    font-family: 'OpenDyslexic', verdana, sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+}
+
+    .layette_conteneur {
+        display : flex;
+        flex-direction : row;
+        gap : 1rem;
+        align-items : stretch;
+        width : 90%;
+        margin : 0 auto;
+    }
+
+    .famille, .classe {
+        width : 90%;
+        margin : 1rem auto;
+    }
+    .famille img, .classe img {
+        width : 100%;
+        height : auto;
+        display : block;
+    }
+
+        figcaption {
+        text-align : center;
     }
 
 </style>
