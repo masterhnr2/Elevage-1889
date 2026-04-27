@@ -1,13 +1,13 @@
 <script>
 
-    import Menu from '$lib/components/Menu.svelte';
     import Navbar from '$lib/components/Navbar.svelte';
-    import IconeLivre from '$lib/components/Cantons/Icone_livre.svelte';
+    import IconeLivre from '$lib/components/Icone_livre.svelte';
 
 </script>
 
 <Navbar/>
 
+<div class="bod">
 <h1><strong>Exposition universelle de 1889 Elevage des enfants du premier âge - Finistère</strong></h1>
 
 <h2>Projet</h2>
@@ -18,11 +18,18 @@
 <p>
 Remercier le Musée de Bretagne, remercier les profs, remercier Jacob, remercier le public
 </p>
-
+</div>
 <IconeLivre/>
 
 
 <style>
+
+
+    .bod {
+        padding-top: 5%;
+
+    }
+
     h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: xx-large;
@@ -32,7 +39,7 @@ Remercier le Musée de Bretagne, remercier les profs, remercier Jacob, remercier
         text-align: center;
         margin-left: 20%;
         margin-right: 20%;
-        margin-top: 5%;
+
         color: #ae9784;
 
     }
@@ -51,8 +58,8 @@ Remercier le Musée de Bretagne, remercier les profs, remercier Jacob, remercier
         font-family : Verdana, Geneva, Tahoma, sans-serif;
         text-justify : inter-cluster;
         text-align : justify;
-        margin-left: 7%;
-        margin-right : 7%;
+        margin-left: 20%;
+        margin-right : 20%;
         margin-top : 2%;
     }
 </style>

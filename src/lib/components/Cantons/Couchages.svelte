@@ -1,27 +1,14 @@
+
 <script>
+    import Audio from "../Audio.svelte";
+    
+    let dysMode = false;
 
-let dysMode = false;
-
-let audio;
-let playing = false;
-
-function toggleAudio() {
-    if (playing) {
-        audio.pause();
-        audio.currentTime = 0;
-    } else {
-        audio.play();
-    }
-    playing = !playing;
-}
 </script>
 
-<div class="conteneuraudio">
-<audio bind:this={audio} src="/images/Nightclub.mp3"></audio>
-<span class="audiobouton" on:click={toggleAudio}>
-    {playing ? '⏹️' : '🔊'}
-    </span>
-</div>
+<Audio/>
+
+<!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
     {dysMode ? 'Mode normal' : 'Mode dyslexie'}
@@ -56,7 +43,9 @@ du lit clos des parents. </p> <br>
 
 <div class="berceau">
 <img src="images/mega_059.jpg" alt="Berceau en bois rectangulaire."/>
+<figure>
 <figcaption>Vue d'un berceau bas constitué d'une caisse en bois de châtaignier à parois inclinées avec des traverses à bascule. Quimper, deuxième moitié du XX<sup>ème</sup> siècle.</figcaption>
+</figure>
 </div>
 <br>
 
@@ -104,10 +93,12 @@ atmosphère constamment viciée par suite du peu d'espace existant dans le lit d
 
 <div class="ferme">
 <img src="/images/mega_055.jpg" alt="Intérieur d'une ferme bretonne."/>
+<figure>
 <figcaption><em>Dessin représentant la vue d'intérieur d'une ferme. Sur la droite se trouve la cheminée où une
 femme prépare la cuisson dans un grand récipient (elle agite le contenu avec un grand bâton) ; à sa gauche,
 une jeune fille avec une quenouille. <strong>Vers la gauche, un lit clos avec le banc-coffre</strong> sur lequel
 est assis un homme</em>. Milieu du XIX<sup>ème</sup>siècle.</figcaption>
+</figure>
 </div>
 
 <p> Même si le lit clos et d'anciens modes de couchages persistent encore, les habitudes évoluent d'un canton à
@@ -122,9 +113,11 @@ croissance des enfants .</p>
 <br>
 <div class="berosier">
 <img src="/images/mega_066.jpg" alt="Dessin d'un berceau en osier.">
+<figure>
 <figcaption><em>Dessin sur panier représentant une femme de Châteaulin veillant sur un enfant. À ses pieds, on
 distingue un berceau sous la forme d'un panier en osier garni d'une couverture épaisse pour le confort de
 l'enfant</em>. Gravure de la Galerie Armoricaine, vers 1845.</figcaption>
+</figure>
 </div>
 
 </div>
@@ -137,8 +130,8 @@ l'enfant</em>. Gravure de la Galerie Armoricaine, vers 1845.</figcaption>
    }
 
     p {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
         text-align : justify;
         font-family : Arial, Verdana, Sans-serif;
         font-size : 18px;
@@ -156,17 +149,6 @@ l'enfant</em>. Gravure de la Galerie Armoricaine, vers 1845.</figcaption>
 
     h2 {
         margin-left : 5%;
-    }
-
-        .conteneuraudio {
-        display : flex;
-        margin-top : 2%;
-        margin-left : 85%;
-    }
-    .audiobouton {
-        cursor : pointer;
-        font-size : 5rem;
-        user-select : none;
     }
 
     .dysbouton {
@@ -198,8 +180,11 @@ l'enfant</em>. Gravure de la Galerie Armoricaine, vers 1845.</figcaption>
         display : block;
     }
 
-        figcaption {
-        text-align : center;
+        figure {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 4%;
+        text-align : justify;
     }
 
 </style>

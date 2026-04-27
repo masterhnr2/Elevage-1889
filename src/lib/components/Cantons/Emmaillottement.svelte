@@ -1,33 +1,22 @@
+
 <script>
+    import Audio from "../Audio.svelte";
 
-let dysMode = false;
-
-let audio;
-let playing = false;
-
-function toggleAudio() {
-    if (playing) {
-        audio.pause();
-        audio.currentTime = 0;
-    } else {
-        audio.play();
-    }
-    playing = !playing;
-}
+    let dysMode = false;
+    
 </script>
 
-<div class="conteneuraudio">
-<audio bind:this={audio} src="/images/Nightclub.mp3"></audio>
-<span class="audiobouton" on:click={toggleAudio}>
-    {playing ? '⏹️' : '🔊'}
-    </span>
-</div>
+<Audio/>
+
+<!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
     {dysMode ? 'Mode normal' : 'Mode dyslexie'}
 </button>
 
 <div class:dys={dysMode}>
+
+
 <h1>Emmaillottement et layettes des jeunes enfants</h1>
 <p>L'enquête d'Émile Bérard met en lumière l'évolution des pratiques liées aux vêtements des très jeunes enfants. Les chapitres consacrés aux cantons de Châteaulin, Carhaix et Châteauneuf-du-Faou sont particulièrement éclairants sur ces changements qui affectent quasiment tout le département du Finistère.</p>
 <br>
@@ -39,11 +28,15 @@ function toggleAudio() {
 <div class = "emmaillottement_conteneur">
 <div class="paysanne">
 <img src="/images/mega_064.jpg" alt="Photographie d'une paysanne et d'une fillette tenant deux bébés emmaillotés.">
+<figure>
 <figcaption><em>Portait de femme et d'enfant</em>, photographie de Charles et Paul Géniaux, Ploërmel, entre 1900 et 1905 (collections du Musée de Bretagne). Une paysanne et une fillette tiennent chacune dans leurs bras un bébé emmailloté. Les bras des bébés ne sont pas plaqués contre le corps dans le maillot, mais sont enfilés dans des manches nouées sur le devant.</figcaption>
+</figure>
 </div>
 <div class ="bebe">
 <img src="/images/mega_063.jpg" alt="Croquis d'un bébé emmailloté.">
+<figure>
 <figcaption><em>Bébé emmailloté</em>, croquis de Houël Marguerite, première moitié du XXème siècle (collections du Musée de Bretagne). Puisqu'il ne pouvait pas se débattre, le bébé emmailloté était parfois suspendu à un clou lorsque sa mère devait s'absenter.</figcaption>
+</figure>
 </div>
 </div>
 <br>
@@ -62,10 +55,13 @@ function toggleAudio() {
 
 <div class="ecole">
 <img src="/images/mega_0281.jpg" alt="Photographie d'enfants d'une école maternelle.">
+<figure>
 <figcaption><em>Enfants d'une école maternelle</em>, plaque photographique de Jacques de Thezac, Finistère, début du XXème siècle (collections du Musée départemental breton) <em>[image originale retouchée pour être éclaircie]</em>. Au premier rang, les enfants les plus jeunes portent tous une robe, contrairement aux plus âgés assis derrière eux.</figcaption>
-</div>
+</figure>
+<br/>
 </div>
 
+</div>
 
 <style>
 
@@ -75,8 +71,8 @@ function toggleAudio() {
    }
 
     p {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
         text-align : justify;
         font-family : Arial, Verdana, Sans-serif;
         font-size : 18px;
@@ -96,17 +92,6 @@ function toggleAudio() {
         margin-left : 5%;
     }
 
-        .conteneuraudio {
-        display : flex;
-        margin-top : 2%;
-        margin-left : 85%;
-    }
-    .audiobouton {
-        cursor : pointer;
-        font-size : 5rem;
-        user-select : none;
-    }
-
     .dysbouton {
     cursor: pointer;
     padding: 0.5rem 1rem;
@@ -117,6 +102,7 @@ function toggleAudio() {
     color: white;
     font-size: 14px;
 }
+
 
 .dys p, .dys h1, .dys h2, .dys figcaption {
     font-family: 'OpenDyslexic', verdana, sans-serif;
@@ -156,8 +142,12 @@ function toggleAudio() {
         display : block;
     }
 
-        figcaption {
-        text-align : center;
+        figure {
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        text-align : justify;
     }
 
 </style>

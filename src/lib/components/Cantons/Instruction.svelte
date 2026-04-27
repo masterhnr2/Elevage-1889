@@ -1,27 +1,14 @@
+
 <script>
+    import Audio from "../Audio.svelte";
 
-let dysMode = false;
-
-let audio;
-let playing = false;
-
-function toggleAudio() {
-    if (playing) {
-        audio.pause();
-        audio.currentTime = 0;
-    } else {
-        audio.play();
-    }
-    playing = !playing;
-}
+    let dysMode = false;
+    
 </script>
 
-<div class="conteneuraudio">
-<audio bind:this={audio} src="/images/Nightclub.mp3"></audio>
-<span class="audiobouton" on:click={toggleAudio}>
-    {playing ? '⏹️' : '🔊'}
-    </span>
-</div>
+<Audio/>
+
+<!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
     {dysMode ? 'Mode normal' : 'Mode dyslexie'}
@@ -35,7 +22,7 @@ function toggleAudio() {
 
  <h2> Autrefois </h2>
 <br>
-<p>A Brest, une première école publique fut ouverte le 14 mars 1746, suivie par d’autres, qui furent malheureusement progressivement fermées à partir de 1791. Furent nommés vers 1800 cinq instituteurs puis, après de nombreux efforts, le conseil municipal obtint en 1822 la «&nbspréinstallation des frères de la doctrine chrétienne&nbsp», une congrégation qui se consacre à l’éducation de la jeunesse, des classes populaires notamment. 
+<p>A Brest, une première école publique fut ouverte le 14 mars 1746, suivie par d’autres, qui furent malheureusement progressivement fermées à partir de 1791. Furent nommés vers 1800 cinq instituteurs puis, après de nombreux efforts, le conseil municipal obtint en 1822 la «&nbspréinstallation des frères de la doctrine chrétienne&nbsp», une congrégation qui se consacre à l’éducation de la jeunesse, des classes populaires notamment. </p>
 
 <p>Pour Landerneau comme pour Brest, les enfants n’allaient pas en classe ou très rarement avant 10 ou 11 ans. L’école avait pour objectif de leur apprendre la lecture du breton et les rudiments du catéchisme ; à Daoulas, le latin, l’histoire religieuse et des bases de calcul s’ajoutaient à ces deux disciplines.</p>
  <br>
@@ -55,8 +42,11 @@ progressivement.</p>
 
 <div class="ecole">
 <img src="/images/mega_029.png" alt="Photographie des élèves d'une école."/>
+<figure>
 <figcaption>Les élèves d'une école féminine posent devant leur établissement.</figcaption>
+</figure>
 </div>
+
 
 </div>
 
@@ -68,8 +58,8 @@ progressivement.</p>
    }
 
     p {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
         text-align : justify;
         font-family : Arial, Verdana, Sans-serif;
         font-size : 18px;
@@ -89,16 +79,6 @@ progressivement.</p>
         margin-left : 5%;
     }
 
-        .conteneuraudio {
-        display : flex;
-        margin-top : 2%;
-        margin-left : 85%;
-    }
-    .audiobouton {
-        cursor : pointer;
-        font-size : 5rem;
-        user-select : none;
-    }
 
     .dysbouton {
     cursor: pointer;
@@ -124,13 +104,17 @@ progressivement.</p>
         margin : 1rem auto;
     }
     .ecole img {
-        width : 100%;
+        width : 92%;
         height : auto;
         display : block;
+        margin-left: 5%;
+        margin-right: 8%;
     }
 
-        figcaption {
+        figure {
+        margin-top: 2%;
         text-align : center;
+
     }
 
 </style>

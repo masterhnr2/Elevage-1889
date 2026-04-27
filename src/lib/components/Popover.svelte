@@ -4,19 +4,19 @@
     import Emmaillottement from './Cantons/Emmaillottement.svelte';
     import Gardiennage from './Cantons/Gardiennage.svelte';
     import Instruction from '$lib/components/Cantons/Instruction.svelte';
-    import Layette from './Cantons/Layette.svelte';
     import Allaitement from './Cantons/Allaitement.svelte';
     import Couchages from '$lib/components/Cantons/Couchages.svelte';
-    import LayetteAssist from './Cantons/Layette_assisté.svelte';
+    import Veture from './Cantons/Veture.svelte';
+    import VetureAssiste from './Cantons/Veture_assiste.svelte';
 
 </script>
 
     <div id="popover_Alaitement" popover>
-        <div class="lightboxContainer">
-            <div id="boite">
-                <Allaitement/>
+            <div class="lightboxContainer">
+                <div id="boite">
+                    <Allaitement/>
+                </div>
             </div>
-        </div>
     </div>
 
     <div id="popover_Couchage" popover>
@@ -63,7 +63,7 @@
     <div id="popover_Layette" popover>
         <div class="lightboxContainer">
             <div id="boite">
-                <Layette/>
+                <Veture/>
             </div>
         </div>
     </div>
@@ -71,12 +71,34 @@
     <div id="popover_Layette_assist" popover>
         <div class="lightboxContainer">
             <div id="boite">
-                <LayetteAssist/>
+                <VetureAssiste/>
+            </div>
+            <div class="darkboxContainer">
+                <div id="fond"></div>
             </div>
         </div>
     </div>
 
 <style>
+
+                /*.darkboxContainer {
+                    bottom: 0;
+                    top: 0;
+                    display: flex;
+                    right: 50%;
+                    position: fixed;
+
+                }
+
+                #fond {
+                    display: flex;
+                    height: 100%;
+
+                    width: 100%;
+                    background-color: #000000;
+                    overflow-y: auto;
+
+                } */
 
                 .lightboxContainer {
                     align-items: center;
@@ -86,10 +108,9 @@
                     justify-content: center;
                     left: 65%;
                     position: fixed;
-                    z-index: 10000;
-                    
-                    
-                    }
+                }
+
+
 
                 #boite {
                     align-items: flex-start();
@@ -98,7 +119,7 @@
                     height: 100%;
                     justify-content: space-evenly;
                     width: 100%;
-                    background-color: rgb(155, 75, 81);
+                    background-color: #be9f82;
                     overflow-y: auto;
 
                     }

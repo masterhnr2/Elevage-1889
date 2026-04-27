@@ -40,10 +40,15 @@
   nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    top:0px;
     justify-content: space-between;
     height: 64px;
     background-color: #ffffff;
     border-bottom: 1px solid #e5e7eb;
+    margin-top: 0px;
   }
   .nav-links {
     display: flex;

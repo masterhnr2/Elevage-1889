@@ -1,17 +1,16 @@
 
 <script>
 
-    import Menu from '$lib/components/Menu.svelte'
     import Navbar from '$lib/components/Navbar.svelte';
-    import IconeLivre from '$lib/components/Cantons/Icone_livre.svelte';
+    import IconeLivre from '$lib/components/Icone_livre.svelte';
 
 </script>
 
 <Navbar/>
 
-<h1><strong>Exposition universelle de 1889 Elevage des enfants du premier âge - Finistère</strong></h1>
+<div class="bod">
 
-<IconeLivre/>
+<h1><strong>Exposition universelle de 1889 Elevage des enfants du premier âge - Finistère</strong></h1>
 
 <div class ="conteneur">
     <div class="musee">
@@ -39,18 +38,27 @@
     </div>
     </div>
 </div>
+</div>
+
+<IconeLivre/>
 
 <style>
+
+
+    .bod {
+        padding-top: 5%;
+
+    }
+
     h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: xx-large;
+        font-size: 5 vh;
         text-transform: uppercase;
         justify-self: center;
         text-justify: inter-cluster;
         text-align: center;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-top : 5%;
+        margin-left: 15%;
+        margin-right: 15%;
         color: #ae9784;
 
     }
@@ -60,7 +68,11 @@
         justify-content : center;
         align-items : flex-start;
         gap: 2%;
-        margin-top: 2%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        padding-bottom: 2%;
     }
     .musee, .hn {
         display : flex;

@@ -1,27 +1,14 @@
+
 <script>
+    import Audio from "../Audio.svelte";
 
-let dysMode = false;
-
-let audio;
-let playing = false;
-
-function toggleAudio() {
-    if (playing) {
-        audio.pause();
-        audio.currentTime = 0;
-    } else {
-        audio.play();
-    }
-    playing = !playing;
-}
+    let dysMode = false;
+    
 </script>
 
-<div class="conteneuraudio">
-<audio bind:this={audio} src="/images/Nightclub.mp3"></audio>
-<span class="audiobouton" on:click={toggleAudio}>
-    {playing ? '⏹️' : '🔊'}
-    </span>
-</div>
+<Audio/>
+
+<!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
     {dysMode ? 'Mode normal' : 'Mode dyslexie'}
@@ -39,11 +26,11 @@ function toggleAudio() {
 <br>
 <div class ="allaitement">
 <img src="/images/mega_073.jpg" alt ="Vue sur une nourrice donnant le sein">
-<figcaption>Une nourrice de Pont-Aven donne le sein à un enfant. Un enfant plus âgé est à ses côtés. </figcaption>
+<figure><figcaption>Une nourrice de Pont-Aven donne le sein à un enfant. Un enfant plus âgé est à ses côtés. </figcaption></figure>
 </div>
 
 <br>
-<p>Lors de l'allaitement artificiel, les mères peuvent utiliser des biberons ou des équivalents variés et plus simples : dans le nord, on utilisait une bouteille bouchée d'une éponge que l'enfant aspirait par succion ; dans le sud et le centre, c’était un petit cruchon de terre d'environ deux décilitres garni d'un morceau de vieille toile ; dans l'extrême ouest, une burette était employée, contenant du lait de vache étendu d'eau et tiédi. Du côté de Quimper, on employait une petite soucoupe à bec creusée, nommée «&nbspcrâle&nbsp». À Carhaix, deux types de biberons coexistaient : un simple vase en forme de poire à goulot, et un second plus grand muni d'une éponge latérale appelée «&nbsptétin&nbsp» — «&nbspPen-Bronn&nbsp» en breton, soit littéralement «&nbsptête de mamelle&nbsp».<p>
+<p>Lors de l'allaitement artificiel, les mères peuvent utiliser des biberons ou des équivalents variés et plus simples : dans le nord, on utilisait une bouteille bouchée d'une éponge que l'enfant aspirait par succion ; dans le sud et le centre, c’était un petit cruchon de terre d'environ deux décilitres garni d'un morceau de vieille toile ; dans l'extrême ouest, une burette était employée, contenant du lait de vache étendu d'eau et tiédi. Du côté de Quimper, on employait une petite soucoupe à bec creusée, nommée «&nbspcrâle&nbsp». À Carhaix, deux types de biberons coexistaient : un simple vase en forme de poire à goulot, et un second plus grand muni d'une éponge latérale appelée «&nbsptétin&nbsp» — «&nbspPen-Bronn&nbsp» en breton, soit littéralement «&nbsptête de mamelle&nbsp».</p>
 <br>
 <p>Pour calmer les pleurs d'un nourrisson, on pouvait lui donner un suçon composé de mie de pain avec du sucre, du beurre ou du miel renfermé dans un morceau de toile. Cela calmait sa faim et ses cris. Cette méthode fut observée sur l'île de Sein, à Ouessant ou à Landerneau. Sur l'île Molène, cette pratique était tellement répandue qu'une croyance aurait attribué la grande bouche de ses habitants au fait d'avoir longtemps usé du suçon. </p>
 <br>
@@ -51,7 +38,7 @@ function toggleAudio() {
 <br>
 <div class ="biberonrobert">
 <img src="/images/biberon_robert.jpg" alt ="affiche publicitaire">
-<figcaption>Affiche publicitaire pour le biberon Robert. </figcaption>
+<figure><figcaption>Affiche publicitaire pour le biberon Robert. </figcaption></figure>
 </div>
 
 <br>
@@ -61,19 +48,18 @@ function toggleAudio() {
 
 </div>
 
-    <style>
+<style>
 
 /* Code à copier coller sur toutes les pages */
-
-
+   
    @font-face {
     font-family : OpenDyslexic;
     src: url('/Fonts/open_dyslexic/OpenDyslexic-Bold.otf');
    }
 
     p {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
         text-align : justify;
         font-family : Arial, Verdana, Sans-serif;
         font-size : 18px;
@@ -91,18 +77,7 @@ function toggleAudio() {
 
     h2 {
         margin-left : 5%;
-    }
-
-        .conteneuraudio {
-        display : flex;
-        margin-top : 2%;
-        margin-left : 85%;
-    }
-    .audiobouton {
-        cursor : pointer;
-        font-size : 5rem;
-        user-select : none;
-    }
+    } 
 
     .dysbouton {
     cursor: pointer;
@@ -115,7 +90,7 @@ function toggleAudio() {
     font-size: 14px;
 }
 
-.dys p, .dys h1, .dys h2, .dys figcaption {
+.dys p, .dys h1, .dys figcaption {
     font-family: 'OpenDyslexic', verdana, sans-serif;
     font-size: 20px;
     line-height: 2;
@@ -125,7 +100,7 @@ function toggleAudio() {
 
 .hr {
     display : none;
-}
+} 
 
 /* Code à modifier selon les images */
 
@@ -143,8 +118,10 @@ function toggleAudio() {
         display : block;
     }
 
-    figcaption {
+    figure {
         text-align : center;
+        margin-top: 1%;
+        margin-bottom: 2%;
         width : 70%;
     }
 </style>

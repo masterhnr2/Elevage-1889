@@ -1,33 +1,21 @@
+
 <script>
+    import Audio from "../Audio.svelte";
 
-let dysMode = false;
-
-let audio;
-let playing = false;
-
-function toggleAudio() {
-    if (playing) {
-        audio.pause();
-        audio.currentTime = 0;
-    } else {
-        audio.play();
-    }
-    playing = !playing;
-}
+    let dysMode = false;
+    
 </script>
 
-<div class="conteneuraudio">
-<audio bind:this={audio} src="/images/Nightclub.mp3"></audio>
-<span class="audiobouton" on:click={toggleAudio}>
-    {playing ? '⏹️' : '🔊'}
-    </span>
-</div>
+<Audio/>
+
+<!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
     {dysMode ? 'Mode normal' : 'Mode dyslexie'}
 </button>
 
 <div class:dys={dysMode}>
+
 <h1> Les vêtures des enfants à Lesneven, Plabennec et Ouessant : l'avènement du costume breton par ville </h1>
 <p> Cantons au Nord de Brest, les villes de Lesneven et Plabennec ainsi que l'île de Ouessant n'ont pas les mêmes traditions en terme de vêtures avant 1860. Par «&nbspvêtures&nbsp» , on entend les vêtements des enfants après environ 6 ans. En général, les vêtements sont des versions miniatures de ceux des adultes. Avant cet âge, ils sont les mêmes peu importe le sexe de l'enfant. </p> 
 <br>
@@ -40,7 +28,9 @@ function toggleAudio() {
 
 <div class="femmes">
 <img src="/images/mega_006.jpg" alt="Photographie de deux femmes et un garçon portant une casquette de marin.">
+<figure>
 <figcaption>Photographie de deux femmes et un jeune garçon en costumes traditionnels prises par Marc Grazillier au début du XX<sup>ème</sup> siècle sur l'île d'Ouessant</figcaption>
+</figure>
 </div>
 <br>
 
@@ -52,11 +42,15 @@ function toggleAudio() {
 <div class = "layette_conteneur">
 <div class="gilet">
 <img src="/images/mega_025.png" alt="Gilet d'enfant de Carhaix exposé au musée breton de Quimper">
+<figure>
 <figcaption>Gilet d'enfant de Carhaix</figcaption>
+</figure>
 </div>
 <div class ="sabots">
 <img src="/images/mega_065.jpg" alt="Sabots d'enfant de 1907.">
+<figure>
 <figcaption>Sabots d'enfants de 1907 exposés au Musée de Bretagne.</figcaption>
+</figure>
 </div>
 </div>
 
@@ -74,8 +68,8 @@ function toggleAudio() {
    }
 
     p {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
         text-align : justify;
         font-family : Arial, Verdana, Sans-serif;
         font-size : 18px;
@@ -93,17 +87,6 @@ function toggleAudio() {
 
     h2 {
         margin-left : 5%;
-    }
-
-        .conteneuraudio {
-        display : flex;
-        margin-top : 2%;
-        margin-left : 85%;
-    }
-    .audiobouton {
-        cursor : pointer;
-        font-size : 5rem;
-        user-select : none;
     }
 
     .dysbouton {
@@ -155,7 +138,7 @@ function toggleAudio() {
         display : block;
     }
 
-        figcaption {
+        figure {
         text-align : center;
     }
 

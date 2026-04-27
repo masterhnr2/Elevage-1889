@@ -1,27 +1,14 @@
+
 <script>
+    import Audio from "../Audio.svelte";
 
-let dysMode = false;
-
-let audio;
-let playing = false;
-
-function toggleAudio() {
-    if (playing) {
-        audio.pause();
-        audio.currentTime = 0;
-    } else {
-        audio.play();
-    }
-    playing = !playing;
-}
+    let dysMode = false;
+    
 </script>
 
-<div class="conteneuraudio">
-<audio bind:this={audio} src="/images/Nightclub.mp3"></audio>
-<span class="audiobouton" on:click={toggleAudio}>
-    {playing ? '⏹️' : '🔊'}
-    </span>
-</div>
+<Audio/>
+
+<!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
     {dysMode ? 'Mode normal' : 'Mode dyslexie'}
@@ -46,7 +33,9 @@ function toggleAudio() {
 
 <div class="famille">
 <img src="/images/mega_040.jpg" alt="Une famille de fermiers avec sept enfants."/>
+<figure>
 <figcaption>Photographie d'une famille de sept enfants issue du livre <em>Souvenirs de Bretagne</em> (vers 1860) appartenant au Musée de Bretagne aujourd'hui.</figcaption>
+</figure>
 </div>
 <br>
 <p>Cette photographie nous permet de voir ce que décrit Bérard. Elle fait partie d'une collection de photographies prises par L. Poret. La famille est en costume de civil ou en costume de Basse Bretagne en extérieur.</p>
@@ -59,7 +48,9 @@ function toggleAudio() {
 
 <div class="classe">
 <img src="/images/mega_044.jpg" alt="Photo de classe."/>
+<figure>
 <figcaption>Photographie d'un groupe, d'orphelins certainement, entouré de deux sœurs et d'une femme dans le jardin du manoir de Kerbenez à Plomelin vers les années 1860.</figcaption>
+</figure>
 </div>
 <br>
 
@@ -77,8 +68,8 @@ function toggleAudio() {
    }
 
     p {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
         text-align : justify;
         font-family : Arial, Verdana, Sans-serif;
         font-size : 18px;
@@ -96,17 +87,6 @@ function toggleAudio() {
 
     h2 {
         margin-left : 5%;
-    }
-
-        .conteneuraudio {
-        display : flex;
-        margin-top : 2%;
-        margin-left : 85%;
-    }
-    .audiobouton {
-        cursor : pointer;
-        font-size : 5rem;
-        user-select : none;
     }
 
     .dysbouton {
@@ -135,7 +115,7 @@ function toggleAudio() {
         align-items : stretch;
         width : 90%;
         margin : 0 auto;
-    }
+    } 
 
     .famille, .classe {
         width : 90%;
@@ -147,8 +127,11 @@ function toggleAudio() {
         display : block;
     }
 
-        figcaption {
-        text-align : center;
+        figure {
+        text-align : justify;
+        margin-top: 4%;
+        margin-left: 2%;
+        margin-right: 3%;
     }
 
 </style>

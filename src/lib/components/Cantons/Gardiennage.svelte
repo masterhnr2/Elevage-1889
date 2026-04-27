@@ -1,27 +1,14 @@
+
 <script>
+    import Audio from "../Audio.svelte";
 
-let dysMode = false;
-
-let audio;
-let playing = false;
-
-function toggleAudio() {
-    if (playing) {
-        audio.pause();
-        audio.currentTime = 0;
-    } else {
-        audio.play();
-    }
-    playing = !playing;
-}
+    let dysMode = false;
+    
 </script>
 
-<div class="conteneuraudio">
-<audio bind:this={audio} src="/images/Nightclub.mp3"></audio>
-<span class="audiobouton" on:click={toggleAudio}>
-    {playing ? '⏹️' : '🔊'}
-    </span>
-</div>
+<Audio/>
+
+<!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
     {dysMode ? 'Mode normal' : 'Mode dyslexie'}
@@ -53,11 +40,15 @@ existait aussi des chaises percées, lesquelles avaient le même but grâce à d
 <div class="gardiennage_conteneur">
 <div class="chomette">
 <img src="images/mega_046.jpg" alt="Chomette, aide à la marche aussi appelé trotteur."/>
+<figure>
 <figcaption>Chomette, mot de la langue gallo pour un trotteur.</figcaption>
+</figure>
 </div>
 <div class="premierpas">
 <img src="images/mega_075.png" alt="Les premiers pas : des enfants en rang avec plusieurs aides à la marche pour les enfants."/>
+<figure>
 <figcaption>Photographie de l'ouvrage d'un groupe d'enfants avec leurs nourrices et des aides à la marche.</figcaption>
+</figure>
 <br>
 </div>
 </div>
@@ -73,11 +64,15 @@ bouillie, crêpes de blé noir, lait caillé, soupe, lard, pain de seigle et cid
 <div class="gardiennage_conteneur">
 <div class="porte">
 <img src="/images/mega_077.png" alt ="Porte à battants très commune dans le Finistère."/>
+<figure>
 <figcaption>Photographie de l'ouvrage qui montre une femme avec un nourrisson derrière la porte battant et deux hommes devant ainsi qu'un cochon.</figcaption>
+</figure>
 </div>
 <div class="hameau">
 <img src="/images/mega_049.jpg" alt ="Hameau breton."/>
+<figure>
 <figcaption>Hameau breton. La maison la plus à gauche comporte une demi-porte.</figcaption>
+</figure>
 </div>
 </div>
 
@@ -101,10 +96,9 @@ avait des problèmes de maladies dues à l'environnement proche des champs : </p
 <p>«&nbspMalheureusement les fermes continuent à demeurer entourées de dépôts de fumier qui provoquent des
 fièvres et engendrent des épidémies.&nbsp»</p>
 
-
 </div>
 
-    <style>
+<style>
 
 /* Code à copier coller sur toutes les pages */
 
@@ -115,8 +109,8 @@ fièvres et engendrent des épidémies.&nbsp»</p>
    }
 
     p {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
         text-align : justify;
         font-family : Arial, Verdana, Sans-serif;
         font-size : 18px;
@@ -136,18 +130,7 @@ fièvres et engendrent des épidémies.&nbsp»</p>
         margin-left : 5%;
     }
 
-        .conteneuraudio {
-        display : flex;
-        margin-top : 2%;
-        margin-left : 85%;
-    }
-    .audiobouton {
-        cursor : pointer;
-        font-size : 5rem;
-        user-select : none;
-    }
-
-    .dysbouton {
+        .dysbouton {
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin: 1rem;
@@ -165,6 +148,7 @@ fièvres et engendrent des épidémies.&nbsp»</p>
     letter-spacing: 1.5px;
     word-spacing: 1.5px;
 }
+
 
 .hr {
     display : none;
@@ -192,8 +176,11 @@ fièvres et engendrent des épidémies.&nbsp»</p>
         display : block;
     }
 
-    figcaption {
-        text-align : center;
-        width : 100%;
+    figure {
+        text-align : justify;
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+
     }
 </style>
