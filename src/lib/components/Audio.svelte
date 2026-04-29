@@ -1,7 +1,12 @@
+<!-- BOUTON D'AUDIODESCRIPTION -->
+
+
 <script>
 
 let audio;
 let playing = false;
+
+export let chemin ="";
 
 function toggleAudio() {
     if (playing) {
@@ -14,14 +19,13 @@ function toggleAudio() {
 }
 </script>
 
+
 <div class="conteneuraudio">
-<audio bind:this={audio} src="/images/Nightclub.mp3"></audio>
-<span class="audiobouton" on:click={toggleAudio}>
-    {playing ? '⏹️' : '🔊'}
+    <audio bind:this={audio} src={chemin} ></audio>
+    <span class="audiobouton" on:click={toggleAudio}>
+        {playing ? '⏹️' : '🔊'}
     </span>
 </div>
-
-
 
 <style>
 

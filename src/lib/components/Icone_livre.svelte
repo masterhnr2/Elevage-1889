@@ -1,3 +1,5 @@
+<!-- LIEN VERS LA PAGE DU MANUSCRIT SUR LE SITE DU MUSEE DE BRETAGNE -->
+
 <script>
 
     import Livre from '$lib/assets/Ico livre.png'

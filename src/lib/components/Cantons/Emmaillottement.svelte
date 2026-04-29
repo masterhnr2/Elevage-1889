@@ -6,7 +6,9 @@
     
 </script>
 
-<Audio/>
+<Audio
+    chemin={"/images/Lemonade.mp3"}
+/>
 
 <!-- Bouton mode dyslexique -->
 
@@ -26,18 +28,18 @@
 <p>L'emmaillotement avait une autre fonction, plus symbolique. <strong>Les parents voulaient s'assurer que le corps du nouveau-né soit «&nbspbien fait&nbsp»</strong>, c'est-à-dire avec des membres bien droits. Cette pratique, comme de nombreuses autres (compression du crâne pour le rendre plus rond, par exemple), s'inscrivait dans une logique de modelage du corps des très jeunes enfants.</p>
 
 <div class = "emmaillottement_conteneur">
-<div class="paysanne">
-<img src="/images/mega_064.jpg" alt="Photographie d'une paysanne et d'une fillette tenant deux bébés emmaillotés.">
-<figure>
-<figcaption><em>Portait de femme et d'enfant</em>, photographie de Charles et Paul Géniaux, Ploërmel, entre 1900 et 1905 (collections du Musée de Bretagne). Une paysanne et une fillette tiennent chacune dans leurs bras un bébé emmailloté. Les bras des bébés ne sont pas plaqués contre le corps dans le maillot, mais sont enfilés dans des manches nouées sur le devant.</figcaption>
-</figure>
-</div>
-<div class ="bebe">
-<img src="/images/mega_063.jpg" alt="Croquis d'un bébé emmailloté.">
-<figure>
-<figcaption><em>Bébé emmailloté</em>, croquis de Houël Marguerite, première moitié du XXème siècle (collections du Musée de Bretagne). Puisqu'il ne pouvait pas se débattre, le bébé emmailloté était parfois suspendu à un clou lorsque sa mère devait s'absenter.</figcaption>
-</figure>
-</div>
+    <div class="paysanne">
+        <img src="/images/mega_064.jpg" alt="Photographie d'une paysanne et d'une fillette tenant deux bébés emmaillotés.">
+        <figure>
+            <figcaption><em>Portait de femme et d'enfant</em>, photographie de Charles et Paul Géniaux, Ploërmel, entre 1900 et 1905 (collections du Musée de Bretagne). Une paysanne et une fillette tiennent chacune dans leurs bras un bébé emmailloté. Les bras des bébés ne sont pas plaqués contre le corps dans le maillot, mais sont enfilés dans des manches nouées sur le devant.</figcaption>
+        </figure>
+    </div>
+    <div class ="bebe">
+        <img src="/images/mega_063.jpg" alt="Croquis d'un bébé emmailloté.">
+        <figure>
+            <figcaption><em>Bébé emmailloté</em>, croquis de Houël Marguerite, première moitié du XXème siècle (collections du Musée de Bretagne). Puisqu'il ne pouvait pas se débattre, le bébé emmailloté était parfois suspendu à un clou lorsque sa mère devait s'absenter.</figcaption>
+        </figure>
+    </div>
 </div>
 <br>
 
@@ -115,21 +117,41 @@
     .emmaillottement_conteneur {
         display : flex;
         flex-direction : row;
-        gap : 1rem;
+        gap : 2rem;
         align-items : stretch;
-        width : 90%;
-        margin : 0 auto;
+        width : 86%;
+        margin: 4% 8% 4% 8%;
     }
 
-    .paysanne, .bebe {
-        flex : 1;
-        margin : 0;
+    .paysanne {
+
+        width: 60%;
+        height : 60%;
+
     }
 
-    .paysanne img, .bebe img {
-        width : 100%;
-        height : 435px;
-        display : block;
+    .bebe {
+
+        width: 43%;
+        height : 43%;
+
+    }
+
+    .paysanne img
+    {
+
+        width: 100%;
+        height : 100%;
+
+    }
+    
+    
+    .bebe img {
+
+
+        width: 100%;
+        height : 100%;
+
     }
 
     .ecole {
@@ -143,9 +165,9 @@
     }
 
         figure {
-        margin-top: 2%;
+        margin-top: 5%;
         margin-left: 2%;
-        margin-right: 2%;
+        margin-right: 4%;
         margin-bottom: 2%;
         text-align : justify;
     }

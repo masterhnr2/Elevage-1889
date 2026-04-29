@@ -6,7 +6,9 @@
     
 </script>
 
-<Audio/>
+<Audio
+    chemin={"/images/Saliva - Ladies and Gentlemen.mp3"}
+/>
 
 <!-- Bouton mode dyslexique -->
 

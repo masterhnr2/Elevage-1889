@@ -1,3 +1,5 @@
+<!-- FENETRE CONTENANT LES INFORMATIONS -->
+
 <script>
 
     import Education from './Cantons/Education.svelte';
@@ -72,9 +74,6 @@
         <div class="lightboxContainer">
             <div id="boite">
                 <VetureAssiste/>
-            </div>
-            <div class="darkboxContainer">
-                <div id="fond"></div>
             </div>
         </div>
     </div>

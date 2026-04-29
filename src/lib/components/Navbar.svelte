@@ -1,3 +1,5 @@
+<!-- MENU DE NAVIGATION -->
+
 <script>
   export let links = [
     { label: "Accueil", href: "/" },

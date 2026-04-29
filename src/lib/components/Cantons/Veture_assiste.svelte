@@ -6,7 +6,9 @@
     
 </script>
 
-<Audio/>
+<Audio
+    chemin={"/images/Rebels.mp3"}
+/>
 
 <!-- Bouton mode dyslexique -->
 

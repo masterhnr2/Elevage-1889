@@ -6,7 +6,9 @@
     
 </script>
 
-<Audio/>
+<Audio
+    chemin={"/images/AURORA - Heathens (Lyric Video).mp3"}
+/>
 
 <!-- Bouton mode dyslexique -->
 

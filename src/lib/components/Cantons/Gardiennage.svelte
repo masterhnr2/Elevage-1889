@@ -6,7 +6,9 @@
     
 </script>
 
-<Audio/>
+<Audio
+    chemin={"/images/Poni Hoax - Everything Is Real.mp3"}
+/>
 
 <!-- Bouton mode dyslexique -->
 
