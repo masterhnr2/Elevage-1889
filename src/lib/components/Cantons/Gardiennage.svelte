@@ -7,7 +7,7 @@
 </script>
 
 <Audio
-    chemin={"/images/Poni Hoax - Everything Is Real.mp3"}
+    chemin={""}
 />
 
 <!-- Bouton mode dyslexique -->
@@ -18,26 +18,14 @@
 
 <div class:dys={dysMode}>
 
-<h1> Le gardiennage des enfants au XIXe siècle </h1>
-<p> Le «&nbspgardiennage&nbsp» des enfants au XIXe siècle réfère à la manière dont les enfants étaient gardés
-par leurs parents, leurs nourrices ou, plus rarement, d'autres personnes tels que leurs frères et sœurs. Dans son
-ouvrage, Emile Bérard apporte un éclairage sur l'évolution des habitudes de gardiennage en organisant son
-propos en deux parties «&nbspautrefois&nbsp» et «&nbspauiourd'hui&nbsp», comme pour l'ensemble des
-thèmes qu'il aborde. Qu'en était-il, donc, du gardiennage dans le canton de Quimper, Briec et Concarneau ? </p>
-<br>
+<h1> Le gardiennage des enfants au XIX<sup>e</sup>&nbspsiècle </h1>
+<p> Le <em>«&nbspgardiennage&nbsp»</em> des enfants au XIX<sup>e</sup>&nbspsiècle se réfère à la manière dont les enfants étaient gardés par leurs parents, leurs nourrices ou, plus rarement, par d’autres personnes tels que leurs frères et sœurs. Dans son ouvrage, Émile Bérard apporte un éclairage sur l’évolution des habitudes de gardiennage en organisant son propos en deux parties <em>«&nbspautrefois&nbsp»</em> et <em>«&nbspaujourd’hui&nbsp»</em>, comme pour l'ensemble des thèmes qu'il aborde. Qu’en était-il, donc, du gardiennage dans le canton de Quimper, Briec et Concarneau ? </p>
+ 
 <h2> Autrefois </h2>
 <br>
-<p> Pour les enfants en bas âge, du mobilier était mis en place ; des berceaux était placés «&nbspà une hauteur
-de 0.75m environ du sol&nbsp», près du lit parental, permettant ainsi de protéger l'enfant des animaux. De
-même, «&nbsp[l]a porte de la maison [ ... ] était divisée en deux battants&nbsp». Le battant inférieur avait pour
-objectif d'empêcher les animaux de rentrer dans la maison, tandis que la partie supérieure pouvait s'ouvrir pour
-laisser entrer la lumière sans mettre en danger les enfants.
-Pour Briec, l'auteur donne l'exemple d'une «&nbspsorte de banc rectangulaire, percé au milieu&nbsp» (appelé
-alloir ou chomette), lequel servait à l'apprentissage des premiers pas. «&nbsple bébé était placé dans une sorte
-de lunette glissant dans une rainure pratiquee d'un bout a l'autre du banc, dans le sens de la longueur&nbsp». Il
-existait aussi des chaises percées, lesquelles avaient le même but grâce à des roulettes à chaque pied.
-</p>
-<br>
+<p> Pour les enfants en bas âge, du mobilier était mis en place ; des berceaux était placés <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=66"><em>«&nbspà une hauteur de 0.75m environ du sol&nbsp»</em></a>, près du lit parental, permettant ainsi de protéger l’enfant des animaux. De même, <em>«&nbsp[l]a porte de la maison […] était divisée en deux battants&nbsp»</em>. Le battant inférieur avait pour objectif d’empêcher les animaux de rentrer dans la maison, tandis que la partie supérieure pouvait s’ouvrir pour laisser entrer la lumière sans mettre en danger les enfants. 
+Pour Briec, l’auteur donne l’exemple d’une <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=84"><em>«&nbspsorte de banc rectangulaire, percé au milieu&nbsp»</em></a> (appelé alloir ou chomette), lequel servait à l’apprentissage des premiers pas. <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=84"><em>«&nbspLe bébé était placé dans une sorte de lunette glissant dans une rainure pratiquée d'un bout à l'autre du banc, dans le sens de la longueur&nbsp»</em></a>. Il existait aussi des chaises percées, lesquelles avaient le même but grâce à des roulettes à chaque pied.
+ </p>
 
 <div class="gardiennage_conteneur">
 <div class="chomette">
@@ -55,13 +43,7 @@ existait aussi des chaises percées, lesquelles avaient le même but grâce à d
 </div>
 </div>
 
-<p>Les enfants étaient invités à se défouler et vivre dehors, «&nbspau grand air&nbsp», «&nbsppour préparer
-une race forte&nbsp». Une importance particulière était portee a cet exercice. Lorsqu'une maladie se déclarait,
-des femmes, des «&nbspmatrones&nbsp», venaient et préparaient des breuvages et onguents ; l'effet de ces
-préparations relevait probablement de la superstition, car la «&nbspforce de la constitution triomphait du mal
-plus souvent&nbsp». Finalement, concernant la nourriture de la famille, l'auteur fait mention pour Quimper de
-bouillie, crêpes de blé noir, lait caillé, soupe, lard, pain de seigle et cidre. </p>
-<br>
+<p>Les enfants étaient invités à se défouler et vivre dehors, <a href="http://collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=67">«&nbspau grand air&nbsp», «&nbsppour préparer une race forte&nbsp»</a>. Une importance particulière était portée à l'exercice physique.  Lorsqu’une maladie se déclarait, des femmes, des <a href="http://collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=67">«&nbspmatrones&nbsp»</a>, venaient et préparaient des breuvages et onguents&nbsp; l’effet de ces préparations relevait probablement de la superstition, car la <a href="http://collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=67"><em>«&nbspforce de la constitution triomphait du mal plus souvent&nbsp»</em></a>. Finalement, concernant la nourriture de la famille, l’auteur fait mention pour Quimper de bouillie, crêpes de blé noir, lait caillé, soupe, lard, pain de seigle et cidre.</p>
 
 <div class="gardiennage_conteneur">
 <div class="porte">
@@ -79,24 +61,15 @@ bouillie, crêpes de blé noir, lait caillé, soupe, lard, pain de seigle et cid
 </div>
 
 <br>
-<h2> Aujourd'hui </h2>
+<h2> Aujourd’hui </h2>
 <br>
-<p>A Concarneau, des garderies furent mises en place pour palier le manque de protection et d'élevage de la
-part de la mère, ce qui était récurrent, notamment lorsque les saisons des grandes pêches arrivaient.
-Parallèlement, les enfants des champs étaient gardés par leurs aînés ou leurs grands-mères voire, lorsqu'aucune
-de ces solutions n'était possible, par une voisine .</p>
-<p>Du côté du mobilier, peu d'informations sont données par l'auteur concernant les meubles utilisés. Il indique
-tout de même pour Briec la diminution d'utilisation des appareils susmentionnés, au profit de l'intervention
-directe de la mère pour aider l'enfant dans ses premiers pas, grâce à du linge en tout genre.
-Malgré le développement des soins médicaux, à Quimper la mortalité augmentait, ce qui était a priori dû
-notamment à «&nbspl'abus, par les parents, des boissons alcooliques&nbsp». Sur ce point, Émile Bérard insiste
-en mentionnant les marins ivres dans les ports, qui ne montraient pas un «&nbspbon&nbsp» comportement aux
-enfants .</p>
-<p>L'auteur effectue ici un parallèle surprenant avec les enfants américains, lesquels jouaient dans des jardins
-d'enfants, ces derniers rappelant le champ protégé par des clôtures. Malgré la force reconnue du grand air, il y
-avait des problèmes de maladies dues à l'environnement proche des champs : </p>
-<p>«&nbspMalheureusement les fermes continuent à demeurer entourées de dépôts de fumier qui provoquent des
-fièvres et engendrent des épidémies.&nbsp»</p>
+<p>A Concarneau, des garderies furent mises en place pour palier le manque de protection et d’élevage de la part de la mère, ce qui était récurrent, notamment lorsque les saisons des grandes pêches arrivaient. Parallèlement, les enfants des champs étaient gardés par leurs aînés ou leurs grands-mères voire, lorsqu’aucune de ces solutions n’était possible, par une voisine.</p>
+<p>Du côté du mobilier, peu d’informations sont données par l’auteur concernant les meubles utilisés. Il indique tout de même pour Briec la diminution d’utilisation des appareils susmentionnés, au profit de l’intervention directe de la mère pour aider l’enfant dans ses premiers pas, grâce à du linge en tout genre. 
+Malgré le développement des soins médicaux, à Quimper la mortalité augmentait, ce qui était a priori dû notamment à <a href="http://collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=67"><em>«&nbspl’abus, par les parents, des boissons alcooliques&nbsp»</em></a>. Sur ce point, Émile Bérard insiste en mentionnant les marins ivres dans les ports, qui ne montraient pas un <em>«&nbspbon&nbsp»</em> comportement aux enfants.</p>
+<p>L'auteur effectue ici un parallèle surprenant avec les enfants américains, lesquels jouaient dans des jardins d’enfants, ces derniers rappelant le champ protégé par des clôtures. Malgré la force reconnue du grand air, il y avait des problèmes de maladies dues à l’environnement proche des champs&nbsp: </p> 
+<p> <a href="http://collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=67"><em>«&nbspMalheureusement les fermes continuent à demeurer entourées de dépôts de fumier qui provoquent des fièvres et engendrent des épidémies.&nbsp»</em></a></p>
+<br>
+<a href="/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
 
 </div>
 
@@ -119,7 +92,21 @@ fièvres et engendrent des épidémies.&nbsp»</p>
         letter-spacing : 1.5px;
     }
 
+    .source {
+    display : block;
+    text-align : center;
+    font-family : Verdana, sans-serif;
+    font-weight : bold;
+    margin-left : 3%;
+    margin-right : 3%;
+    font-size : 20px;
+    }
 
+    a{
+    text-decoration : none;
+    color : brown;
+    }
+    
     h1, h2 {
         text-align : center;
         font-family : Verdana, sans-serif;

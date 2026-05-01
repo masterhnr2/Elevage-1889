@@ -7,7 +7,7 @@
 </script>
 
 <Audio
-    chemin={"/images/Saliva - Ladies and Gentlemen.mp3"}
+    chemin={""}
 />
 
 <!-- Bouton mode dyslexique -->
@@ -18,24 +18,86 @@
 
 <div class:dys={dysMode}>
 
-<h1>éducation</h1>
-    <br>
-    <p>Bérard Emile Théophile (13 février 1859 - 23 juin 1899) (Administration) ; 1889 ; Finistère. Mage Emile (1836 - 1908) ; Anonyme (Photographe) ; 1860 - 1870 ; Finistère ; Une grande majorité des autres photographies peuvent être attribuées avec certitude à Émile Mage (1836-1908). Ce photographe brestois, membre de la Société française de photographie fréquente Paris où il expose ses photographies aux expositions de 1874 et 1876, pour lesquelles il reçoit une mention honorable. Il est aussi l'auteur de plusieurs séries Types et costumes bretons, éditées au format carte de visite et vues stéréoscopiques, qui figurent les différentes modes régionales et sont largement diffusées, et présentes dans l'album..</p>\
-    <br>
-    <h2>Description</h2>
-    <br>
-    <p>Album in folio comprenant 370 feuillets imprimés et manuscrits, 47 cartes rehaussées des cantons et îles du Finistère recensés, et 102 tirages photographiques. Chaque chapitre ouvre sur une carte du département, la même carte est ainsi reproduite 47 fois, par procédé lithographique, rehaussée en bleu pour les côtes et en rose pour l'arrondissement concerné ; viennent ensuite un à deux feuillets sur lesquels sont contrecollées les photographies. Un chapitre comprend neuf feuillets de formulaires imprimés, complétés à la main et donnant des renseignements sur les objets exposés, les pratiques d'autrefois et celles d'aujourd'hui, selon différentes thématiques : l'allaitement, la nourriture, l'emmaillotement, les vêtements, les modes de couchage, l'instruction et l'éducation, etc. </p>"
+<h1>L'éducation des enfants au XIX<sup>e</sup>&nbspsiècle : Douarnenez, Fouesnant et Plogastel</h1>
 
+<p>L'éducation désigne ici non pas l'instruction scolaire, mais ce qui se transmet au quotidien dans la famille&nbsp: les gestes du travail, les règles morales dictées par la religion, le rapport au corps et à la communauté. C'est ce savoir-être que documente Bérard dans son enquête sur le Finistère. Les cantons de Fouesnant, Plogastel et Douarnenez en offrent trois portraits contrastés, illustrant la cohérence de l'éducation traditionnelle et les résistances qu'elle oppose à toute transformation.</p>
+
+<h2>Autrefois</h2>
+<br>
+<p>Dans le Finistère rural, l'éducation repose sur le corps et le travail. À Fouesnant, le campagnard <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272143/high"><em>«&nbsps'attachait seulement à utiliser le plus tôt possible les bras de toute sa famille&nbsp»</em></a>&nbsp: le souci d'éduquer <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272143/high"><em>«&nbspn'existait pas&nbsp»</em></a> et <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272143/high"><em>«&nbspl'éducation des forces physiques était la seule en honneur&nbsp»</em></a>. L'enfant n'est pas d'abord un être à former&nbsp: il est une force de travail au service de la famille.</p>
+
+<div class="image">
+<figure>
+  <img src="images/mega_079.jpg" alt="Enfants gardant des vaches à Pont-Aven, Finistère, 1895."/>
+  <figcaption><em>Enfants en costume traditionnel gardant des vaches à Pont-Aven</em>, Finistère, 1895. À Fouesnant comme dans tout le Finistère rural, les enfants étaient mis au travail dès leur plus jeune âge.</figcaption>
+</figure>
+</div>
+<br>
+<p>À Plogastel, cette logique s'articule avec une formation morale portée par la religion et la coutume. Les mères <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272163/high"><em>«&nbspne s'occupaient [pas] de l'éducation de leurs enfants&nbsp»</em></a> dans le sens d'un éveil intellectuel&nbsp: on ne devait pas <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272163/high"><em>«&nbspforcer le moment&nbsp»</em></a>, convaincu que <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272163/high"><em>«&nbspl'intelligence de l'enfant aurait souffert&nbsp»</em></a> si on avait voulu <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272163/high"><em>«&nbspéveiller sa curiosité avant l'âge&nbsp»</em></a>. La trajectoire est tracée d'avance &nbsp: prières vers 7 ans, catéchisme vers 10, champs vers 12. La morale ne se raisonne pas&nbsp— elle s'incorpore par les rites et la répétition.</p>
+<h2>Aujourd'hui</h2>
+<br>
+<p>À Plogastel, l'évolution est perceptible. <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272163/high"><em>«&nbspL'éducation de l'enfant est meilleure qu'autrefois&nbsp»</em></a>&nbsp: la mère s'occupe désormais davantage de le former <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272163/high"><em>«&nbspà la vie intellectuelle et morale&nbsp»</em></a>. Mais Bérard tempère aussitôt&nbsp: il n'est <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272163/high"><em>«&nbsppas rare de rencontrer encore des mères qui, malgré l'instruction et l'éducation qu'elles ont reçues, négligent complètement leurs enfants&nbsp»</em></a>. Surtout, <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272163/high"><em>«&nbsples croyances superstitieuses sont vivaces dans la population&nbsp; elles ne disparaissent que bien lentement&nbsp»</em></a>.</p>
+
+<p>À Douarnenez, le tableau est plus sombre. <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272123/high"><em>«&nbspL'éducation est bornée aux exercices physiques&nbsp»</em></a>&nbsp: les enfants sont envoyés en mer très tôt, et <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272123/high"><em>«&nbspc'est avec joie [qu'ils] se voient incorporés dans la marine&nbsp»</em></a>. Mais Bérard, témoin oculaire, dénonce une dérive grave&nbsp: <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272123/high"><em>«&nbsples marins se font un honneur de faire boire de mauvais alcool à leurs tout jeunes enfants&nbsp»</em></a>&nbsp— il a lui-même vu <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272123/high"><em>«&nbspdonner à boire, à même un verre, de l'eau-de-vie de betterave à un nourrisson de 6 mois&nbsp»</em></a>. <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272123/high"><em>«&nbspLes générations actuelles ne font rien pour préserver les générations futures de ce funeste penchant&nbsp»</em></a>.</p>
+
+<div class="image">
+<figure>
+  <img src="images/mega_082.jpg" alt="Port de pêche avec des bateaux et des marins au travail, Finistère."/>
+  <figcaption><em>Port de pêche du Finistère</em>, fin du XIX<sup>e</sup>&nbspsiècle. À Douarnenez, les enfants grandissaient au rythme de la mer et des bateaux, seule école qui comptait vraiment.</figcaption>
+</figure>
+</div>
+<br>
+<p>Ces trois cantons montrent que l'éducation rurale n'est pas une absence de formation, mais une formation différente&nbsp— ancrée dans le corps, le travail et la croyance. Ce qui se transmet résiste à toute transformation venue d'en haut.</p>
+<br>
+<a href="/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
 </div>
 
 <style>
 
+   @font-face {
+    font-family : OpenDyslexic;
+    src: url('/Fonts/open_dyslexic/OpenDyslexic-Bold.otf');
+   }
+
+    .source {
+    display : block;
+    text-align : center;
+    font-family : Verdana, sans-serif;
+    font-weight : bold;
+    margin-left : 3%;
+    margin-right : 3%;
+    font-size : 20px;
+    }
+
+    a{
+    text-decoration : none;
+    color : brown;
+    }
+
     p {
         margin-left: 8%;
         margin-right: 8%;
+        text-align : justify;
+        font-family : Arial, Verdana, Sans-serif;
+        font-size : 18px;
+        letter-spacing : 1.5px;
     }
 
-        .dysbouton {
+
+    h1, h2 {
+        text-align : center;
+        font-family : Verdana, sans-serif;
+        font-weight : bold;
+        margin-left : 3%;
+        margin-right : 3%;
+    }
+
+    h2 {
+        margin-left : 5%;
+    }
+
+
+    .dysbouton {
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin: 1rem;
@@ -45,5 +107,31 @@
     color: white;
     font-size: 14px;
 }
+
+.dys p, .dys h1, .dys h2, .dys figcaption {
+    font-family: 'OpenDyslexic', verdana, sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+}
+
+    .image {
+        width : 90%;
+        margin : 1rem auto;
+    }
+    .image img {
+        width : 92%;
+        height : auto;
+        display : block;
+        margin-left: 5%;
+        margin-right: 8%;
+    }
+
+        figure {
+        margin-top: 2%;
+        text-align : center;
+
+    }
 
 </style>

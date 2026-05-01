@@ -7,7 +7,7 @@
 </script>
 
 <Audio
-    chemin={"/images/Lemonade.mp3"}
+    chemin={""}
 />
 
 <!-- Bouton mode dyslexique -->
@@ -18,14 +18,15 @@
 
 <div class:dys={dysMode}>
 
-
 <h1>Emmaillottement et layettes des jeunes enfants</h1>
 <p>L'enquête d'Émile Bérard met en lumière l'évolution des pratiques liées aux vêtements des très jeunes enfants. Les chapitres consacrés aux cantons de Châteaulin, Carhaix et Châteauneuf-du-Faou sont particulièrement éclairants sur ces changements qui affectent quasiment tout le département du Finistère.</p>
 <br>
 <h2>Les origines de l'emmaillottement</h2>
+<br>
 <p><strong>L'emmaillotement consistait à envelopper un bébé dans plusieurs couches de linges d'une façon qui ne lui laissait pas de liberté de mouvement.</strong> Après avoir vêtu le bébé d'une chemise fendue et d'un gilet de laine, on l'entourait d'un maillot en laine, drap ou flanelle, qui lui prenait tout le corps depuis le cou jusqu'aux jambes. Enfin, le maillot était lui-même recouvert d'une lisière de drap pour le maintenir en place, et l'enfant était coiffé d'un ou plusieurs bonnets.</p><br>
 <p><strong>L'emmaillotement avait pour but de maintenir l'enfant au chaud</strong>, dans une maison alors souvent humide et mal chauffée. Incapable de bouger, rigidifié par plusieurs couches de vêtements, l'enfant ne risquait pas de se découvrir. Il avait également l'avantage d'être facilement transportable, dans les bras ou sur le dos.</p><br>
-<p>L'emmaillotement avait une autre fonction, plus symbolique. <strong>Les parents voulaient s'assurer que le corps du nouveau-né soit «&nbspbien fait&nbsp»</strong>, c'est-à-dire avec des membres bien droits. Cette pratique, comme de nombreuses autres (compression du crâne pour le rendre plus rond, par exemple), s'inscrivait dans une logique de modelage du corps des très jeunes enfants.</p>
+<p>L'emmaillotement avait une autre fonction, plus symbolique. <strong>Les parents voulaient s'assurer que le corps du nouveau-né soit <em>«&nbspbien fait&nbsp»</em></strong>, c'est-à-dire avec des membres bien droits. Cette pratique, comme de nombreuses autres (compression du crâne pour le rendre plus rond, par exemple), s'inscrivait dans une logique de modelage du corps des très jeunes enfants.</p>
+
 
 <div class = "emmaillottement_conteneur">
     <div class="paysanne">
@@ -37,30 +38,37 @@
     <div class ="bebe">
         <img src="/images/mega_063.jpg" alt="Croquis d'un bébé emmailloté.">
         <figure>
-            <figcaption><em>Bébé emmailloté</em>, croquis de Houël Marguerite, première moitié du XXème siècle (collections du Musée de Bretagne). Puisqu'il ne pouvait pas se débattre, le bébé emmailloté était parfois suspendu à un clou lorsque sa mère devait s'absenter.</figcaption>
+            <figcaption><em>Bébé emmailloté</em>, croquis de Houël Marguerite, première moitié du XX<sup>e</sup>&nbspsiècle (collections du Musée de Bretagne). Puisqu'il ne pouvait pas se débattre, le bébé emmailloté était parfois suspendu à un clou lorsque sa mère devait s'absenter.</figcaption>
         </figure>
     </div>
 </div>
 <br>
 
 <h2>L'évolution de l'emmaillottement</h2>
-<p><strong>Les enquêteurs déplorent la persistance de cette pratique dans le Finistère.</strong> Outre le fait que «&nbsppendant une durée de 7 à 8 mois l'enfant ne pouvait donner aucun exercice à ses membres qui étaient trop étroitement comprimés&nbsp», l'emmaillotement était surtout peu hygiénique. Comme l'enfant n'était changé que 3 à 5 fois par jour, il restait longtemps dans ses excréments, ce qui pouvait entraîner des irritations et des infections.</p><br>
-<p><strong>Néanmoins, l'enquête rapporte plusieurs changements jugés bénéfiques.</strong></p><br>
-<p>D'abord, l'emmaillotement est moins contraignant. Comme il est précisé pour le canton de Châteauneuf-du-Faou (et pour quasiment tout le département) : «&nbspLes bras sont maintenant laissés libres et les jambes sont moins étroitement serrées.&nbsp»</p><br>
+<br>
+<p><strong>Les enquêteurs déplorent la persistance de cette pratique dans le Finistère.</strong> Outre le fait que <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519889/doc/2272471">
+<em>«&nbsppendant une durée de 7 à 8 mois l'enfant ne pouvait donner aucun exercice à ses membres qui étaient trop étroitement comprimés&nbsp» </em></a>, l'emmaillotement était surtout peu hygiénique. Comme l'enfant n'était changé que 3 à 5 fois par jour, il restait longtemps dans ses excréments, ce qui pouvait entraîner des irritations et des infections.</p><br>
+<p><strong>Néanmoins, l'enquête rapporte plusieurs changements jugés bénéfiques.</strong></p>
+<p>D'abord, l'emmaillotement est moins contraignant. Comme il est précisé pour le canton de Châteauneuf-du-Faou (et pour quasiment tout le département) : <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519889/doc/2272471"><em>«&nbspLes bras sont maintenant laissés libres et les jambes sont moins étroitement serrées.&nbsp»</em></a></p>
+<br>
 <p>Ensuite, la période d'emmaillotement s'est raccourcie. Là où autrefois l'enfant restait dans son maillot pendant 7 à 10 mois, il le quitte désormais vers ses 4 ou 6 mois.</p>
 
 <br>
 
 <h2>Après le maillot, la robe</h2>
-<p>L'enquête nous précise la layette (ou vêture) des jeunes enfants de cet âge : «&nbspQuand l'enfant quittait son maillot, il prenait une robe de molleton noir à nombreux plis superposés les uns sur les autres et que l'on décousait pour allonger la robe à mesure que l'enfant grandissait. La robe servait ainsi 5 à 6 ans. On lui mettait aussi 3 ou 4 bonnets les uns sur les autres. Il portait des sabots de bois et des bas de laine brune.&nbsp»</p><br>
+<br>
+<p>L'enquête précise la layette (ou vêture) des jeunes enfants de cet âge : <a href=" http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=438"> <em>«&nbspQuand l'enfant quittait son maillot, il prenait une robe de molleton noir à nombreux plis superposés les uns sur les autres et que l'on décousait pour allonger la robe à mesure que l'enfant grandissait. La robe servait ainsi 5 à 6 ans. On lui mettait aussi 3 ou 4 bonnets les uns sur les autres. Il portait des sabots de bois et des bas de laine brune.&nbsp»</em></a></p><br>
 <p><strong>Mis à part de subtils détails</strong> (par exemple un gland argenté sur le bonnet des garçons contre une cocarde colorée sur celui des filles)<strong>, les vêtements des enfants des deux sexes sont identiques.</strong> La robe n'a pas pour fonction de distinguer les garçons des filles, mais les enfants des adultes. Le petit garçon comme la petite fille sont vêtus de ce vêtement féminin car ils appartiennent encore au monde des femmes, celui du foyer et de la maternité. Cette pratique va perdurer jusqu'à la Première Guerre mondiale.</p>
 
 <div class="ecole">
 <img src="/images/mega_0281.jpg" alt="Photographie d'enfants d'une école maternelle.">
 <figure>
-<figcaption><em>Enfants d'une école maternelle</em>, plaque photographique de Jacques de Thezac, Finistère, début du XXème siècle (collections du Musée départemental breton) <em>[image originale retouchée pour être éclaircie]</em>. Au premier rang, les enfants les plus jeunes portent tous une robe, contrairement aux plus âgés assis derrière eux.</figcaption>
+<figcaption><em>Enfants d'une école maternelle</em>, plaque photographique de Jacques de Thezac, Finistère, début du XX<sup>e</sup>&nbspsiècle (collections du Musée départemental breton) <em>[image originale retouchée pour être éclaircie]</em>. Au premier rang, les enfants les plus jeunes portent tous une robe, contrairement aux plus âgés assis derrière eux.</figcaption>
 </figure>
-<br/>
+<br>
+
+<a href="/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
+
 </div>
 
 </div>
@@ -93,6 +101,21 @@
     h2 {
         margin-left : 5%;
     }
+
+    .source {
+    display : block;
+    text-align : center;
+    font-family : Verdana, sans-serif;
+    font-weight : bold;
+    margin-left : 3%;
+    margin-right : 3%;
+    font-size : 20px;
+    }
+
+    a{
+    text-decoration : none;
+    color : brown;
+}
 
     .dysbouton {
     cursor: pointer;
