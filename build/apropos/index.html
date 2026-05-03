@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+		    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f8e71b8a1d842be02ac30c1839b12e94 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+            
+                <style>
+                    .leaflet-image-layer {
+                        /* old android/safari*/
+                        image-rendering: -webkit-optimize-contrast;
+                        image-rendering: crisp-edges; /* safari */
+                        image-rendering: pixelated; /* chrome */
+                        image-rendering: -moz-crisp-edges; /* firefox */
+                        image-rendering: -o-crisp-edges; /* opera */
+                        -ms-interpolation-mode: nearest-neighbor; /* ie */
+                    }
+                </style>
+
+
+
+
+		<link href="../_app/immutable/entry/start.T9C7_m5e.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CcD_WUBn.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/51RuFlK9.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CoXX6Fni.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DhUw68Ip.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.BqrbDwop.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/D6fkD4d_.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/7bYFGcZI.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/vN7LVBTN.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CQGBZTu-.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.CMb1beWL.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CHRj4bxW.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CrJHInmU.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/3.DlBT7Djo.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C1qWmdcx.js" rel="modulepreload">
+		<!--12qhfyh--><link rel="icon" href="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='107'%20height='128'%20viewBox='0%200%20107%20128'%3e%3ctitle%3esvelte-logo%3c/title%3e%3cpath%20d='M94.157%2022.819c-10.4-14.885-30.94-19.297-45.792-9.835L22.282%2029.608A29.92%2029.92%200%200%200%208.764%2049.65a31.5%2031.5%200%200%200%203.108%2020.231%2030%2030%200%200%200-4.477%2011.183%2031.9%2031.9%200%200%200%205.448%2024.116c10.402%2014.887%2030.942%2019.297%2045.791%209.835l26.083-16.624A29.92%2029.92%200%200%200%2098.235%2078.35a31.53%2031.53%200%200%200-3.105-20.232%2030%2030%200%200%200%204.474-11.182%2031.88%2031.88%200%200%200-5.447-24.116'%20style='fill:%23ff3e00'/%3e%3cpath%20d='M45.817%20106.582a20.72%2020.72%200%200%201-22.237-8.243%2019.17%2019.17%200%200%201-3.277-14.503%2018%2018%200%200%201%20.624-2.435l.49-1.498%201.337.981a33.6%2033.6%200%200%200%2010.203%205.098l.97.294-.09.968a5.85%205.85%200%200%200%201.052%203.878%206.24%206.24%200%200%200%206.695%202.485%205.8%205.8%200%200%200%201.603-.704L69.27%2076.28a5.43%205.43%200%200%200%202.45-3.631%205.8%205.8%200%200%200-.987-4.371%206.24%206.24%200%200%200-6.698-2.487%205.7%205.7%200%200%200-1.6.704l-9.953%206.345a19%2019%200%200%201-5.296%202.326%2020.72%2020.72%200%200%201-22.237-8.243%2019.17%2019.17%200%200%201-3.277-14.502%2017.99%2017.99%200%200%201%208.13-12.052l26.081-16.623a19%2019%200%200%201%205.3-2.329%2020.72%2020.72%200%200%201%2022.237%208.243%2019.17%2019.17%200%200%201%203.277%2014.503%2018%2018%200%200%201-.624%202.435l-.49%201.498-1.337-.98a33.6%2033.6%200%200%200-10.203-5.1l-.97-.294.09-.968a5.86%205.86%200%200%200-1.052-3.878%206.24%206.24%200%200%200-6.696-2.485%205.8%205.8%200%200%200-1.602.704L37.73%2051.72a5.42%205.42%200%200%200-2.449%203.63%205.79%205.79%200%200%200%20.986%204.372%206.24%206.24%200%200%200%206.698%202.486%205.8%205.8%200%200%200%201.602-.704l9.952-6.342a19%2019%200%200%201%205.295-2.328%2020.72%2020.72%200%200%201%2022.237%208.242%2019.17%2019.17%200%200%201%203.277%2014.503%2018%2018%200%200%201-8.13%2012.053l-26.081%2016.622a19%2019%200%200%201-5.3%202.328'%20style='fill:%23fff'/%3e%3c/svg%3e"/><!---->
+		<link href="../_app/immutable/assets/Icone_livre.Cf0D7SHW.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/3.DXrz5a0i.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><nav class="svelte-e2espz"><ul class="svelte-e2espz"><li class="svelte-e2espz"><a href="../" class="svelte-e2espz">Accueil</a></li> <li class="svelte-e2espz"><a href="../folium" class="svelte-e2espz">Carte interactive</a></li> <li class="svelte-e2espz"><a href="../apropos" class="svelte-e2espz">À propos</a></li></ul></nav> <div class="bod svelte-e2espz"><h1 class="svelte-e2espz">Le Master Humanités Numériques</h1> <p class="svelte-e2espz">Le site que vous consultez actuellement a été conçu par les étudiant·e·s de <strong>la promotion Stephanie Shirley du <a href="https://formations.univ-rennes2.fr/fr/formations/master-37/master-humanites-numeriques-JF9HM9NB.html">master Humanités Numériques de l’université Rennes 2</a></strong>. Cette formation en deux ans nous a permis d’apprendre de <strong>nombreux outils et langages numériques</strong> utilisés pour créer des bases de données et des sites web, traiter des documents multimédias, visualiser des données, etc.</p> <p class="svelte-e2espz">Ce master est proposé en bi-diplomation, ce qui nous permet de garder un lien constant avec nos autres disciplines de prédilection (histoire, littérature générale et comparée, philosophie, art du spectacle, etc).</p><br/> <h1 class="svelte-e2espz">Le projet de M2 2025-2026</h1> <p class="svelte-e2espz"><strong>Chaque année, les étudiant·e·s de deuxième année de notre master se mobilisent autour d’un projet commun pour mettre en pratique les savoirs acquis dans cette formation.</strong> La petite taille de la promotion (11 étudiant·e·s) facilite l’entraide entre ses membres. Ce projet est aussi l’occasion de coopérer avec nos enseignant·e·s bien sûr, mais aussi avec des spécialistes du sujet étudié, des institutions rennaises telles que le Musée de Bretagne ou les Archives municipales, des journalistes, des associations étudiantes, etc.</p><br/> <p class="svelte-e2espz"><strong>Cette année, le Musée de Bretagne nous a proposé de travailler librement sur un ouvrage du XIX<sup>e</sup> siècle portant sur la puériculture dans le Finistère.</strong> Après l’avoir découvert, nous avons décidé d’en tirer un outil de médiation pour exposer les conclusions principales de l’enquête au moyen d’une <strong>carte interactive</strong>. Allez vite la découvrir !</p><br/> <h1 class="svelte-e2espz">L’ouvrage <em>Élevage des enfants du premier âge</em></h1> <p class="svelte-e2espz"><strong>En 1888, le Ministère de l’Intérieur commande une grande enquête sur l’élevage des enfants en France</strong> (aujourd’hui le terme ‘éducation’ serait préféré). Des questionnaires sont donc relayés aux agents des préfectures , et dans le cas du Finistère, le chef de division Émile Bérard semble s'être passionné pour le sujet.</p><br/> <p class="svelte-e2espz">Au terme de son travail, il fait donc produire <strong>un très bel ouvrage relié, composé de 47 cahiers de 11 à 13 feuillets chacun, soit plus de 900 pages</strong>. Celles-ci comportent des inscriptions manuscrites, du texte imprimé, des photographies et des cartes du département peintes à l’aquarelle.</p><br/> <p class="svelte-e2espz">Remarqué pour sa qualité, le livre est exposé aux côtés d’autres objets en lien avec la puériculture dans le pavillon de l’Assistance Publique à <strong>l’Exposition Universelle de Paris de 1889</strong>. Finalement, le Musée de Bretagne l’acquiert en 2023 pour l’ajouter à ses collections.</p><br/> <p class="svelte-e2espz">L'ouvrage débute par une introduction faisant office de résumé de l'enquête, puis propose un dictionnaire français-breton contenant les termes recueillis par les enquêteurs. Enfin, il passe en revue les 43 cantons du Finistère. Pour chacun, il présente des comparaisons entre les pratiques d'autrefois et d'aujourd'hui (1888 donc) sur l'allaitement, l'emmaillotement et la vêture des enfants, leurs modes de couchage, leur gardiennage et les soins qu'on leur porte, leur instruction et leur éducation.</p><br/> <h1 class="svelte-e2espz">La puériculture du XIX<sup>e</sup> siècle</h1> <p class="svelte-e2espz">La production de cet ouvrage a lieu dans un contexte de <strong>développement de la méthode d’enquête en Europe au XIX<sup>e</sup> siècle</strong> : la bureaucratie est en plein essor et les sciences statistiques deviennent un outil de gouvernement.</p><br/> <p class="svelte-e2espz">C’est aussi le moment où se diffuse <strong>la puériculture pastorienne</strong> en France, qui tente de répondre à un enjeu démographique majeur. En effet, la mortalité infantile touche alors 180 enfants de moins de un an sur 1000 (contre 4,1 en 2024).</p><br/> <p class="svelte-e2espz"><strong>L’objectif de l’enquête commandée par le Ministère de l’Intérieur est clair</strong> : faire un état des lieux de l’élevage des enfants dans le pays pour combattre les mauvaises pratiques (emmaillotement, lait mal stérilisé, etc.) et promouvoir les bonnes (stérilisation des biberons, appels plus fréquents au médecin, etc).</p><br/> <p class="svelte-e2espz">Ces recommandations vont peu à peu s’imposer dans la France de la seconde moitié du XIX<sup>e</sup> siècle et effectivement faire baisser la mortalité infantile.<strong>Mais, comme le montre l’enquête d’Émile Bérard, cette transformation se fera plus ou moins rapidement selon les populations et les territoires.</strong></p><br/> <h1 class="svelte-e2espz">Pour les plus curieux</h1> <button class="biblio svelte-e2espz" type="button"><a href="/Elevage-1889/_app/immutable/assets/Bibliographie.DavzeVR0.pdf" target="_blank" class="svelte-e2espz">Accédez à la bibliographie utilisée pour le projet</a></button><br/> <h1 class="svelte-e2espz">Remerciements</h1> <h2 class="svelte-e2espz">Université Rennes 2</h2> <p class="svelte-e2espz">Tout d'abord, merci à <strong>Karine Karila-Cohen</strong>, <strong>Fabienne Moreau</strong> et <strong>Chloé Guennou</strong>, nos enseignantes et encadrantes pour ce projet.</p> <p class="svelte-e2espz">Merci également à <strong>Pierre Karila-Cohen</strong> et <strong>Patricia Legris</strong> pour leurs conférences respectives sur l'enquête et la puériculture au XIX<sup>e</sup> siècle ainsi que pour leurs réponses à nos nombreuses questions.</p> <p class="svelte-e2espz">Un grand merci à <strong>Jacob Hart</strong> pour son aide précieuse sur la conception du site et de la carte interactive.</p> <p class="svelte-e2espz">Enfin, merci à <strong>Claire Vallée</strong> pour ses conseils concernant la communication du projet.</p><br/> <h2 class="svelte-e2espz">Musée de Bretagne</h2> <p class="svelte-e2espz">Merci à <strong>Laurence Prod'homme</strong> de nous avoir fait découvrir l'ouvrage d'Émile Bérard et pour son travail de documentation en amont de notre projet.</p> <p class="svelte-e2espz">Merci également aux agents des services numériques du Musée de Bretagne et des Champs Libres, en particulier <strong>Manuel Moreau</strong>, <strong>Fabienne Martin-Adam</strong> et <strong>Guillaume Rouhan</strong> pour leurs conseils.</p><br/> <h2 class="svelte-e2espz">Archives</h2> <p class="svelte-e2espz">Merci aux <strong>Archives départementales de l'Orne</strong> pour leur accueil ; aux <strong>Archives départementales du Finistère</strong> pour les éclaircissements sur le passé d'Émile Bérard ; et à <strong>l'Association des archivistes de France</strong> pour leur aide.</p><br/> <h2 class="svelte-e2espz">Journalistes</h2> <p class="svelte-e2espz">Merci à <strong>Marilyne Gautronneau</strong> et <strong>Arnaud Loubry</strong> de <em>ICI Rennes métropoles</em> d'avoir apporté une visibilité supplémentaire à ce projet grâce à leur article paru dans le numéro d'avril 2026.</p> <p class="svelte-e2espz">Merci également au soutien de <strong><em>L'Agrafe</em></strong>, journal indépendant de l'université, pour nous avoir permis de publier un article dans le numéro de mai 2026.</p> <h2 class="svelte-e2espz">Remerciements spéciaux</h2> <p class="svelte-e2espz">À <strong>Stéphanie</strong> pour avoir trouvé le nom de la promotion.</p> <p class="svelte-e2espz">À <strong>Clara</strong> pour avoir trouvé des solutions aux problèmes de coding du site.</p> <p class="svelte-e2espz">À l'ensemble de <strong>nos proches</strong> mis à contribution.</p> <p class="svelte-e2espz">Enfin, merci à <strong>tous·tes les curieux·ses</strong> qui s'intéressent à notre projet.</p></div> <div id="icone_manuscrit" class="svelte-15b2v99"><a href="http://www.collections.musee-bretagne.fr/ark:/83011/FLMjo506404" target="_blank"><img src="/Elevage-1889/_app/immutable/assets/Ico%20livre.D5orsWF1.png" alt="Icone_livre" id="icone"/></a></div><!----><!--]--><!----><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1hbu4nz = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						assets: "/Elevage-1889"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.T9C7_m5e.js"),
+						import("../_app/immutable/entry/app.BqrbDwop.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
