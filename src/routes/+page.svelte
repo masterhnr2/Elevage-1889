@@ -2,14 +2,17 @@
 <script>
 
     import IconeLivre from '$lib/components/Icone_livre.svelte';
+    import {base} from '$app/paths';
+    import logobretagne from '$lib/assets/logobretagne.png'
+    import logo_hn from '$lib/assets/logo_hn.png'
 
 </script>
 
 <nav>
 <ul>
-    <li><a href="/">Accueil</a></li>
-    <li><a href="/folium">Carte interactive</a></li>
-    <li><a href="/apropos">À propos</a></li>
+    <li><a href="{base}/">Accueil</a></li>
+    <li><a href="{base}/folium">Carte interactive</a></li>
+    <li><a href="{base}/apropos">À propos</a></li>
 </ul>
 </nav>
 
@@ -21,7 +24,7 @@
 <div class ="conteneur">
     <div class="musee">
     <a href="https://www.leschampslibres.fr/les-champs-libres/musee-de-bretagne" target="_blank">
-    <img src="/images/logobretagne.png" alt="Image de la carte" class="museeimage">
+    <img src={logobretagne} alt="Image de la carte" class="museeimage">
     </a>
     <div class ="museeacces">
     <p> <a href="https://www.leschampslibres.fr/les-champs-libres/musee-de-bretagne"> Les Champs Libres - Musée de Bretagne</a></p>
@@ -37,7 +40,7 @@
     </div>
     <div class="hn">
     <a href="https://lnk.bio/masterhnr2" target="_blank">
-    <img src="/images/logo_hn.png" alt="Image des RS" class="hnimage">
+    <img src={logo_hn} alt="Image des RS" class="hnimage">
     </a>
     <div class ="hnacces">
     <p> <a href="https://lnk.bio/masterhnr2"> Master Humanités Numériques Université Rennes 2</a></p>

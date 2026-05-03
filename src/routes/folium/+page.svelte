@@ -2,13 +2,14 @@
     import Folium from '$lib/components/Folium.svelte';
     import Popover from '$lib/components/Popover.svelte';
     import IconeLivre from '$lib/components/Icone_livre.svelte';
+    import {base} from '$app/paths'
 </script>
 
 <nav>
 <ul>
-    <li><a href="/">Accueil</a></li>
-    <li><a href="/folium">Carte interactive</a></li>
-    <li><a href="/apropos">À propos</a></li>
+    <li><a href="{base}/">Accueil</a></li>
+    <li><a href="{base}/folium">Carte interactive</a></li>
+    <li><a href="{base}/apropos">À propos</a></li>
 </ul>
 </nav>
 

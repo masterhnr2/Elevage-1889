@@ -1,6 +1,9 @@
 
 <script>
     import Audio from "../Audio.svelte";
+    import mega_073 from '$lib/assets/mega_073.jpg'
+    import biberon_robert from '$lib/assets/biberon_robert.jpg'
+    import {base} from '$app/paths'
 
     let dysMode = false;
     
@@ -27,7 +30,7 @@
 
 <br>
 <div class ="allaitement">
-<img src="/images/mega_073.jpg" alt ="Vue sur une nourrice donnant le sein">
+<img src={mega_073} alt ="Vue sur une nourrice donnant le sein">
 <figure><figcaption>Une nourrice de Pont-Aven donne le sein à un enfant. Un enfant plus âgé est à ses côtés. </figcaption></figure>
 </div>
 
@@ -39,7 +42,7 @@
 
 <br>
 <div class ="biberonrobert">
-<img src="/images/biberon_robert.jpg" alt ="affiche publicitaire">
+<img src={biberon_robert} alt ="affiche publicitaire">
 <figure><figcaption>Affiche publicitaire pour le biberon Robert. </figcaption></figure>
 </div>
 
@@ -48,7 +51,7 @@
 <br>
 <p><em>«&nbspAujourd'hui&nbsp»</em> comme <em>«&nbspautrefois&nbsp»</em>, l'allaitement au sein restait le meilleur moyen de nourrir un enfant. Les progrès médicaux mirent en avant que le nourrissage au sein était plus hygiénique et plus nourrissant pour l'enfant qui n'était sevré que vers un ou deux ans. L'allaitement artificiel, quant à lui, était vite remplacé  par de la nourriture solide pour l'enfant. Le biberon était peu hygiénique et rempli de bactéries. Souvent dégouté par le lait gâté encore présent dans les biberons, le nourrisson se tournait rapidement vers les bouillis de froment ou d'avoine coupées à du lait ou de l'eau.</p>
 <br>
-<a href="/apropos" class="source" target="_blank">→ Pour aller plus loin, voir nos sources ici ←</a>
+<a href="{base}/apropos" class="source" target="_blank">→ Pour aller plus loin, voir nos sources ici ←</a>
 
 </div>
 
