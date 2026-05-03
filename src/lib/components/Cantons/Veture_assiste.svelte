@@ -24,13 +24,13 @@
 <br>
 <h2> Avant l'enquête par Émile Bérard : une spécifité entre enfants assistés et enfants</h2> 
 <br> 
-<p>Dans son introduction, Émile Bérard écrit <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=26"><em>«&nbsples règlements administratifs sur les vêtements des enfants assistés stipulaient qu'à l'âge d'un an les commissions hospitalières délivreraient aux pupilles&nbsp»</em></a> une première vêture. L'auteur indique que le renouvellement de la vêture se faisait tous les ans jusqu'à 6 ans puis de même de 6 ans à 12 ans. Certains vêtements étaient obligatoires comme les robes ou les vestes dans le cas où les enfants assistaient aux catéchismes ou allaient à l'école primaire.</p>
+<p>Dans son introduction, Émile Bérard écrit <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=26" target="_blank"><em>«&nbsples règlements administratifs sur les vêtements des enfants assistés stipulaient qu'à l'âge d'un an les commissions hospitalières délivreraient aux pupilles&nbsp»</em></a> une première vêture. L'auteur indique que le renouvellement de la vêture se faisait tous les ans jusqu'à 6 ans puis de même de 6 ans à 12 ans. Certains vêtements étaient obligatoires comme les robes ou les vestes dans le cas où les enfants assistaient aux catéchismes ou allaient à l'école primaire.</p>
 <br>
 <p>Pour Pont-L'Abbé et Rosporden avant 1860, l'auteur fait une liste de ce qui est donné par l'hospice, c'est-à-dire par la maison d'assistance pour les personnes démunies. Il y avait une distinction entre les filles et les garçons qui ne se faisait qu'à partir de 6 ans où les vêtements des enfants étaient des miniatures de ceux des adultes.</p>
 <br>
-<p> Les étoffes utilisées pour ces vêtures n'étaient selon les dires de l'auteur que pour les enfants des hospices. La couleur de ces vêtements était brun fauve ou gris fer. Bérard nous informe aussi que leur coupe était <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=59"><em>«&nbspridicule&nbsp»</em></a>, autrement dit elle était certainement mal faite.</p>
+<p> Les étoffes utilisées pour ces vêtures n'étaient selon les dires de l'auteur que pour les enfants des hospices. La couleur de ces vêtements était brun fauve ou gris fer. Bérard nous informe aussi que leur coupe était <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=59" target="_blank"><em>«&nbspridicule&nbsp»</em></a>, autrement dit elle était certainement mal faite.</p>
 <br>
-<p> À Pont-Croix, comme pour les deux autres villes, la liste des vêtures est donnée par l'hospice, ce qui engendre des moqueries envers les enfants assistés. Selon Bérard, <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=179"><em>«&nbspl'hospice [la] délivrait aux nourriciers&nbsp»</em></a> pour les garçons et les filles.</p>
+<p> À Pont-Croix, comme pour les deux autres villes, la liste des vêtures est donnée par l'hospice, ce qui engendre des moqueries envers les enfants assistés. Selon Bérard, <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=179" target="_blank"><em>«&nbspl'hospice [la] délivrait aux nourriciers&nbsp»</em></a> pour les garçons et les filles.</p>
 <br>
 
 <div class="famille">
@@ -45,7 +45,7 @@
 
 <h2>Au moment où Bérard fait son enquête : des changements pour les vêtures</h2>
 <br>
-<p> Un changement s'opère à partir des années 1860 avec une autre forme de rémunération qui amène à d'autres vêtures. Les vêtures des enfants assistés étaient uniformisées à celles des autres enfants. L'administration hospitalière donnait une somme aux nourriciers, les personnes qui s'occupaient des enfants assistés pour qu'ils fassent confectionner ou confectionnent des vêtements. Selon Bérard, l'administration et les enfants trouvaient ce changement bien. Le lien était meilleur entre les nourriciers et les enfants. Ainsi, des enfants assistés placés dans des familles avaient les mêmes vêtements que ceux des enfants non assistés. Émile Bérard s'en réjouit lui-même avec cette phrase : <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=26"><em>«&nbspil était pénible pour un jeune enfant de se trouver seul affublé d'une livrée ridicule au milieu d'enfants de son âge&nbsp»</em></a>. </p>
+<p> Un changement s'opère à partir des années 1860 avec une autre forme de rémunération qui amène à d'autres vêtures. Les vêtures des enfants assistés étaient uniformisées à celles des autres enfants. L'administration hospitalière donnait une somme aux nourriciers, les personnes qui s'occupaient des enfants assistés pour qu'ils fassent confectionner ou confectionnent des vêtements. Selon Bérard, l'administration et les enfants trouvaient ce changement bien. Le lien était meilleur entre les nourriciers et les enfants. Ainsi, des enfants assistés placés dans des familles avaient les mêmes vêtements que ceux des enfants non assistés. Émile Bérard s'en réjouit lui-même avec cette phrase : <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=26" target="_blank"><em>«&nbspil était pénible pour un jeune enfant de se trouver seul affublé d'une livrée ridicule au milieu d'enfants de son âge&nbsp»</em></a>. </p>
 <br>
 
 <div class="classe">
@@ -59,7 +59,7 @@
 
 <p>Plomelin étant au sud ouest de Quimper, la photographie est au cœur du canton choisi pour les enfants assistés. Rare photographie que nous avons pu trouver sur les orphelins du Finistère, celle-ci montre des garçons en costume démontrant l'uniformisation de celui-ci. Cependant, aucune preuve ne permet de dire que ce costume était porté par tous les enfants du Finistère.</p>
 <br>
-<p> Les enfants assistés, selon l'auteur, <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=1813"><em>«&nbsprencontrent plus de facilités à s'établir dans le pays où ils ont été élevés&nbsp»</em></a>. </p>
+<p> Les enfants assistés, selon l'auteur, <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=1813" target="_blank"><em>«&nbsprencontrent plus de facilités à s'établir dans le pays où ils ont été élevés&nbsp»</em></a>. </p>
 <br>
 <a href="/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
 </div>

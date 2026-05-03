@@ -46,10 +46,10 @@
 
 <h2>L'évolution de l'emmaillottement</h2>
 <br>
-<p><strong>Les enquêteurs déplorent la persistance de cette pratique dans le Finistère.</strong> Outre le fait que <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519889/doc/2272471">
+<p><strong>Les enquêteurs déplorent la persistance de cette pratique dans le Finistère.</strong> Outre le fait que <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519889/doc/2272471" target="_blank">
 <em>«&nbsppendant une durée de 7 à 8 mois l'enfant ne pouvait donner aucun exercice à ses membres qui étaient trop étroitement comprimés&nbsp» </em></a>, l'emmaillotement était surtout peu hygiénique. Comme l'enfant n'était changé que 3 à 5 fois par jour, il restait longtemps dans ses excréments, ce qui pouvait entraîner des irritations et des infections.</p><br>
 <p><strong>Néanmoins, l'enquête rapporte plusieurs changements jugés bénéfiques.</strong></p>
-<p>D'abord, l'emmaillotement est moins contraignant. Comme il est précisé pour le canton de Châteauneuf-du-Faou (et pour quasiment tout le département) : <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519889/doc/2272471"><em>«&nbspLes bras sont maintenant laissés libres et les jambes sont moins étroitement serrées.&nbsp»</em></a></p>
+<p>D'abord, l'emmaillotement est moins contraignant. Comme il est précisé pour le canton de Châteauneuf-du-Faou (et pour quasiment tout le département) : <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519889/doc/2272471" target="_blank"><em>«&nbspLes bras sont maintenant laissés libres et les jambes sont moins étroitement serrées.&nbsp»</em></a></p>
 <br>
 <p>Ensuite, la période d'emmaillotement s'est raccourcie. Là où autrefois l'enfant restait dans son maillot pendant 7 à 10 mois, il le quitte désormais vers ses 4 ou 6 mois.</p>
 
@@ -57,7 +57,7 @@
 
 <h2>Après le maillot, la robe</h2>
 <br>
-<p>L'enquête précise la layette (ou vêture) des jeunes enfants de cet âge : <a href=" http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=438"> <em>«&nbspQuand l'enfant quittait son maillot, il prenait une robe de molleton noir à nombreux plis superposés les uns sur les autres et que l'on décousait pour allonger la robe à mesure que l'enfant grandissait. La robe servait ainsi 5 à 6 ans. On lui mettait aussi 3 ou 4 bonnets les uns sur les autres. Il portait des sabots de bois et des bas de laine brune.&nbsp»</em></a></p><br>
+<p>L'enquête précise la layette (ou vêture) des jeunes enfants de cet âge : <a href=" http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=438" target="_blank"> <em>«&nbspQuand l'enfant quittait son maillot, il prenait une robe de molleton noir à nombreux plis superposés les uns sur les autres et que l'on décousait pour allonger la robe à mesure que l'enfant grandissait. La robe servait ainsi 5 à 6 ans. On lui mettait aussi 3 ou 4 bonnets les uns sur les autres. Il portait des sabots de bois et des bas de laine brune.&nbsp»</em></a></p><br>
 <p><strong>Mis à part de subtils détails</strong> (par exemple un gland argenté sur le bonnet des garçons contre une cocarde colorée sur celui des filles)<strong>, les vêtements des enfants des deux sexes sont identiques.</strong> La robe n'a pas pour fonction de distinguer les garçons des filles, mais les enfants des adultes. Le petit garçon comme la petite fille sont vêtus de ce vêtement féminin car ils appartiennent encore au monde des femmes, celui du foyer et de la maternité. Cette pratique va perdurer jusqu'à la Première Guerre mondiale.</p>
 
 <div class="ecole">
