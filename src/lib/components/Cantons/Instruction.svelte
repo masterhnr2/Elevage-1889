@@ -1,7 +1,7 @@
 
 <script>
     import Audio from "../Audio.svelte";
-    import mega_029 from '$lib/assets/mega_029.jpg'
+    import mega_029 from '$lib/assets/mega_029.png'
     import {base} from '$app/paths'
 
     let dysMode = false;

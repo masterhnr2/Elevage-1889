@@ -2,6 +2,7 @@
 
     import IconeLivre from '$lib/components/Icone_livre.svelte';
     import {base} from '$app/paths';
+    import Bibliographie from '$lib/assets/Bibliographie.pdf'
 
 </script>
 
@@ -35,7 +36,7 @@
 <p>Ces recommandations vont peu à peu s’imposer dans la France de la seconde moitié du XIX<sup>e</sup>&nbspsiècle et effectivement faire baisser la mortalité infantile.<strong> Mais, comme le montre l’enquête d’Émile Bérard, cette transformation se fera plus ou moins rapidement selon les populations et les territoires.</strong></p><br>
 
 <h1>Pour les plus curieux</h1>
-<button class="biblio" type="button"><a href="Bibliographie.pdf" target="_blank"> Accédez à la bibliographie utilisée pour le projet</a></button><br>
+<button class="biblio" type="button"><a href={Bibliographie} target="_blank"> Accédez à la bibliographie utilisée pour le projet</a></button><br>
 
 <h1>Remerciements</h1>
 <h2>Université Rennes 2</h2>

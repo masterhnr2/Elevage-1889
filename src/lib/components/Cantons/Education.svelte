@@ -1,6 +1,9 @@
 
 <script>
     import Audio from "../Audio.svelte";
+    import {base} from '$app/paths';
+    import mega_079 from '$lib/assets/mega_079.jpg';
+    import mega_082 from '$lib/assets/mega_082.jpg';
 
     let dysMode = false;
     
@@ -28,7 +31,7 @@
 
 <div class="image">
 <figure>
-  <img src="images/mega_079.jpg" alt="Enfants gardant des vaches à Pont-Aven, Finistère, 1895."/>
+  <img src={mega_079} alt="Enfants gardant des vaches à Pont-Aven, Finistère, 1895."/>
   <figcaption><em>Enfants en costume traditionnel gardant des vaches à Pont-Aven</em>, Finistère, 1895. À Fouesnant comme dans tout le Finistère rural, les enfants étaient mis au travail dès leur plus jeune âge.</figcaption>
 </figure>
 </div>
@@ -42,14 +45,14 @@
 
 <div class="image">
 <figure>
-  <img src="images/mega_082.jpg" alt="Port de pêche avec des bateaux et des marins au travail, Finistère."/>
+  <img src={mega_082} alt="Port de pêche avec des bateaux et des marins au travail, Finistère."/>
   <figcaption><em>Port de pêche du Finistère</em>, fin du XIX<sup>e</sup>&nbspsiècle. À Douarnenez, les enfants grandissaient au rythme de la mer et des bateaux, seule école qui comptait vraiment.</figcaption>
 </figure>
 </div>
 <br>
 <p>Ces trois cantons montrent que l'éducation rurale n'est pas une absence de formation, mais une formation différente&nbsp— ancrée dans le corps, le travail et la croyance. Ce qui se transmet résiste à toute transformation venue d'en haut.</p>
 <br>
-<a href="/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
+<a href="{base}/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
 </div>
 
 <style>

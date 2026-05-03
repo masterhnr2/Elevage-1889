@@ -2,7 +2,7 @@
 <script>
     import Audio from "../Audio.svelte";
     import mega_006 from '$lib/assets/mega_006.jpg'
-    import mega_025 from '$lib/assets/mega_025.jpg'
+    import mega_025 from '$lib/assets/mega_025.png'
     import mega_065 from '$lib/assets/mega_065.jpg'
     import {base} from '$app/paths'
 
@@ -33,7 +33,7 @@
 <br>
 
 <div class="femmes">
-<img src="/images/mega_006.jpg" alt="Photographie de deux femmes et un garçon portant une casquette de marin.">
+<img src={mega_006} alt="Photographie de deux femmes et un garçon portant une casquette de marin.">
 <figure>
 <figcaption>Photographie de deux femmes et un jeune garçon en costumes traditionnels prises par Marc Grazillier au début du XX<sup>e</sup>&nbspsiècle sur l'île d'Ouessant.</figcaption>
 </figure>
@@ -46,13 +46,13 @@
 
 <div class = "layette_conteneur">
 <div class="gilet">
-<img src="/images/mega_025.png" alt="Gilet d'enfant de Carhaix exposé au musée breton de Quimper">
+<img src={mega_025} alt="Gilet d'enfant de Carhaix exposé au musée breton de Quimper">
 <figure>
 <figcaption>Gilet d'enfant de Carhaix.</figcaption>
 </figure>
 </div>
 <div class ="sabots">
-<img src="/images/mega_065.jpg" alt="Sabots d'enfant de 1907.">
+<img src={mega_065} alt="Sabots d'enfant de 1907.">
 <figure>
 <figcaption>Sabots d'enfants de 1907 exposés au Musée de Bretagne.</figcaption>
 </figure>

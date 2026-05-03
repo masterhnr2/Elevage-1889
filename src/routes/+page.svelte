@@ -3,8 +3,9 @@
 
     import IconeLivre from '$lib/components/Icone_livre.svelte';
     import {base} from '$app/paths';
-    import logobretagne from '$lib/assets/logobretagne.png'
-    import logo_hn from '$lib/assets/logo_hn.png'
+    import logobretagne from '$lib/assets/logobretagne.png';
+    import logo_hn from '$lib/assets/logo_hn.png';
+    import Carte_accueuil from '$lib/assets/Carte_accueuil.jpg';
 
 </script>
 
@@ -31,11 +32,11 @@
     </div>
     </div>
     <div class="carte">
-    <a href = "/folium">
-    <img src="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272005/high" alt="Image de la carte" class="carteimage">
+    <a href = "{base}/folium">
+    <img src={Carte_accueuil} alt="Image de la carte" class="carteimage">
     </a>
     <div class ="carteacces">
-    <p> <a href="/folium"> Carte interactive </a></p>
+    <p> <a href="{base}/folium"> Carte interactive </a></p>
     </div>
     </div>
     <div class="hn">

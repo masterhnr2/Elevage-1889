@@ -34,13 +34,13 @@
 
 <div class = "emmaillottement_conteneur">
     <div class="paysanne">
-        <img src="/images/mega_064.jpg" alt="Photographie d'une paysanne et d'une fillette tenant deux bébés emmaillotés.">
+        <img src={mega_064} alt="Photographie d'une paysanne et d'une fillette tenant deux bébés emmaillotés.">
         <figure>
             <figcaption><em>Portait de femme et d'enfant</em>, photographie de Charles et Paul Géniaux, Ploërmel, entre 1900 et 1905 (collections du Musée de Bretagne). Une paysanne et une fillette tiennent chacune dans leurs bras un bébé emmailloté. Les bras des bébés ne sont pas plaqués contre le corps dans le maillot, mais sont enfilés dans des manches nouées sur le devant.</figcaption>
         </figure>
     </div>
     <div class ="bebe">
-        <img src="/images/mega_063.jpg" alt="Croquis d'un bébé emmailloté.">
+        <img src={mega_063} alt="Croquis d'un bébé emmailloté.">
         <figure>
             <figcaption><em>Bébé emmailloté</em>, croquis de Houël Marguerite, première moitié du XX<sup>e</sup>&nbspsiècle (collections du Musée de Bretagne). Puisqu'il ne pouvait pas se débattre, le bébé emmailloté était parfois suspendu à un clou lorsque sa mère devait s'absenter.</figcaption>
         </figure>
@@ -65,7 +65,7 @@
 <p><strong>Mis à part de subtils détails</strong> (par exemple un gland argenté sur le bonnet des garçons contre une cocarde colorée sur celui des filles)<strong>, les vêtements des enfants des deux sexes sont identiques.</strong> La robe n'a pas pour fonction de distinguer les garçons des filles, mais les enfants des adultes. Le petit garçon comme la petite fille sont vêtus de ce vêtement féminin car ils appartiennent encore au monde des femmes, celui du foyer et de la maternité. Cette pratique va perdurer jusqu'à la Première Guerre mondiale.</p>
 
 <div class="ecole">
-<img src="/images/mega_0281.jpg" alt="Photographie d'enfants d'une école maternelle.">
+<img src={mega_0281} alt="Photographie d'enfants d'une école maternelle.">
 <figure>
 <figcaption><em>Enfants d'une école maternelle</em>, plaque photographique de Jacques de Thezac, Finistère, début du XX<sup>e</sup>&nbspsiècle (collections du Musée départemental breton) <em>[image originale retouchée pour être éclaircie]</em>. Au premier rang, les enfants les plus jeunes portent tous une robe, contrairement aux plus âgés assis derrière eux.</figcaption>
 </figure>

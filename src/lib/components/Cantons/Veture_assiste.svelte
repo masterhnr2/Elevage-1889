@@ -129,15 +129,6 @@
     word-spacing: 1.5px;
 }
 
-    .layette_conteneur {
-        display : flex;
-        flex-direction : row;
-        gap : 1rem;
-        align-items : stretch;
-        width : 90%;
-        margin : 0 auto;
-    } 
-
     .famille, .classe {
         width : 90%;
         margin : 1rem auto;

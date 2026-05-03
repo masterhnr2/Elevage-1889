@@ -2,8 +2,8 @@
 <script>
     import Audio from "../Audio.svelte";
     import mega_046 from '$lib/assets/mega_046.jpg'
-    import mega_075 from '$lib/assets/mega_075.jpg'
-    import mega_077 from '$lib/assets/mega_049.jpg'
+    import mega_075 from '$lib/assets/mega_075.png'
+    import mega_077 from '$lib/assets/mega_077.png'
     import mega_049 from '$lib/assets/mega_049.jpg'
     import {base} from '$app/paths'
 
@@ -143,10 +143,6 @@ Malgré le développement des soins médicaux, à Quimper la mortalité augmenta
     word-spacing: 1.5px;
 }
 
-
-.hr {
-    display : none;
-}
 
 /* Code à modifier selon les images */
 

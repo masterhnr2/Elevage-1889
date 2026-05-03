@@ -9,6 +9,8 @@ URL : https://masterhnr2.github.io/Elevage-1889/
 - [X] Build le projet
 - [x] Incorporer le javascript de Bastien pour les boutons
 - [x] Incorporer le texte des thèmes
-- [] CSS
-- [] Debuggage
+- [x] CSS
+- [x] Debuggage
 - [] Test utilisateur
+- [] Integration du son 
+- [] Readme propre avec documenation 

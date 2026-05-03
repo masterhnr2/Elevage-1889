@@ -1,6 +1,10 @@
 <script>
     import Audio from "../Audio.svelte";
-    
+    import mega_059 from '$lib/assets/mega_059.jpg';
+    import {base} from '$app/paths';
+    import mega_055 from '$lib/assets/mega_055.jpg';
+    import mega_066 from '$lib/assets/mega_066.jpg';
+
     let dysMode = false;
 
 </script>
@@ -26,7 +30,7 @@
 <p> Avant l'enquête d'Emile Bérard, l’usage du berceau était largement répandu dans tout le Finistère, même si la forme et les matériaux variaient selon les cantons. À Pleyben et au Faou, le couchage était presque identique : il s'agissait <a href =" http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272024/high" target="_blank"><em>«&nbspd'une caisse rustique ou une boîte massive en bois de chêne [...] ou de châtaignier reposant sur des supports en forme d'arc de cercle&nbsp»</em></a> pour faciliter le bercement. Pour Huelgoat, on notait l'usage de paniers en osier, parfois munis d'un mécanisme de fermeture permettant de protéger l'enfant des insectes et des animaux de la ferme. Au-delà de leur forme, ces berceaux avaient un point en commun : ils étaient de très petites dimensions. Celle-ci s'explique par le port du maillot, une pratique courante consistant à envelopper étroitement le corps du nourrisson avec plusieurs couches de linge. Cette pratique était soutenue par les adultes convaincus que le corps des nouveau-nés était inarticulé ou inachevé, nécessitant à nouveau un façonnage.</p><br>
 
 <div class="berceau">
-<img src="images/mega_059.jpg" alt="Berceau en bois rectangulaire."/>
+<img src={mega_059} alt="Berceau en bois rectangulaire."/>
 <figure>
 <figcaption>Vue d'un berceau bas constitué d'une caisse en bois de châtaignier à parois inclinées avec des traverses à bascule. Quimper, deuxième moitié du XX<sup>ème</sup> siècle.</figcaption>
 </figure>
@@ -38,14 +42,14 @@
 
 <p> Bérard identifie d’autres moyens de couchage liés aux contraintes des familles ayant d'autres enfants de bas-âge ou des difficultés financières. Dans ces cas-là, la solution courante venait soit de l'emploi d'un grand berceau pour les deux enfants, soit de l'aide d'un voisin qui pouvait reléguer <a href=" http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272378/high" target="_blank"><em>«&nbsp[prêter] un berceau&nbsp»</em></a> à la mère. Dans d'autres cantons, il s'agissait néanmoins d'utiliser des mobiliers destinés à d'autres fins comme des alternatives de couchage pour les enfants. C'est l'exemple typique de Huelgoat, le fond d'une armoire servait en ce sens de couchage d'appoint, où l'on installait l'un des enfants (le plus souvent l'aîné) avec la même literie.</p><br>
 
-<p>Enfin, au-delà du mobilier, <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272026/high" target="_blank"><em>«&nbsple bercement&nbsp»</em></a> occupait ainsi une place importante dans le couchage des enfants. Il constituait une alternative pour calmer et endormir les enfants. Au Faou, certains berceaux étaient munis d’une ficelle permettant le bercement à distance. Selon les croyances de l’époque, cette pratique pouvait aussi prévenir l’apparition des hernies abdominales causées par les crises de pleurs. Le bercement substituait alors d’autres méthodes, comme le gavage au lait de vache, une méthode courante qui consistait à donner une quantité importante de lait de vache à l’enfant pour l'endormir. Néanmoins, comme le relève l'auteur, la pratique du bercement était paradoxalement décriée par les hygiénistes comme nocive pour la santé des jeunes enfants parce que <em>«&nbsp le sommeil de ces bercements tiendrait plus d'un état comateux que d'un sommeil normal&nbsp».<em></p>
+<p>Enfin, au-delà du mobilier, <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272026/high" target="_blank"><em>«&nbsple bercement&nbsp»</em></a> occupait ainsi une place importante dans le couchage des enfants. Il constituait une alternative pour calmer et endormir les enfants. Au Faou, certains berceaux étaient munis d’une ficelle permettant le bercement à distance. Selon les croyances de l’époque, cette pratique pouvait aussi prévenir l’apparition des hernies abdominales causées par les crises de pleurs. Le bercement substituait alors d’autres méthodes, comme le gavage au lait de vache, une méthode courante qui consistait à donner une quantité importante de lait de vache à l’enfant pour l'endormir. Néanmoins, comme le relève l'auteur, la pratique du bercement était paradoxalement décriée par les hygiénistes comme nocive pour la santé des jeunes enfants parce que <em>«&nbsp le sommeil de ces bercements tiendrait plus d'un état comateux que d'un sommeil normal&nbsp».</em></p>
 <br>
 <h2>Aujourd'hui</h2>
 <br>
-<p> Au cours de l'enquête de Bérard, l'évolution des modes de couchage n'est pas uniforme dans tous les cantons. Les villes adoptent les nouveaux modes de couchage, mais l'évolution reste encore partielle dans  certaines campagnes où les procédés anciens subsistent. À Huelgoat, par exemple, l'usage des armoires comme lits pour les jeunes enfants perdure. Le  <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272097/high" target="_blank"><em>«&nbsplit-clos&nbsp»</em></a> reste également l'un des mobiliers les plus répandus pour le couchage des enfants : il s'agit d'un lit fermé utilisé par toute la famille. Certains modèles comportent deux niveaux de couchage : la partie supérieure réservée pour les enfants, et l'inférieure pour les parents. Dans certains cas, un petit berceau sous la forme d'un demi cylindre renversé, appelé <a href=" http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272416/high" target="_blank"><em>«&nbsp kavel ou Bransel&nbsp»</em></a> est directement intégré au lit clos. Cette promiscuité est décriée par Bérard comme une pratique <em>«&nbspanti-hygiénique puisqu’[elle] oblige l’enfant à dormir dans une atmosphère constamment viciée par suite du peu d’espace existant dans le lit des parents&nbsp».</em></p> <br>
+<p> Au cours de l'enquête de Bérard, l'évolution des modes de couchage n'est pas uniforme dans tous les cantons. Les villes adoptent les nouveaux modes de couchage, mais l'évolution reste encore partielle dans  certaines campagnes où les procédés anciens subsistent. À Huelgoat, par exemple, l'usage des armoires comme lits pour les jeunes enfants perdure. Le  <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272097/high" target="_blank"><em>«&nbsplit-clos&nbsp»</em></a> reste également l'un des mobiliers les plus répandus pour le couchage des enfants : il s'agit d'un lit fermé utilisé par toute la famille. Certains modèles comportent deux niveaux de couchage : la partie supérieure réservée pour les enfants, et l'inférieure pour les parents. Dans certains cas, un petit berceau sous la forme d'un demi cylindre renversé, appelé <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519888/doc/2272416/high" target="_blank"><em>«&nbsp kavel ou Bransel&nbsp»</em></a> est directement intégré au lit clos. Cette promiscuité est décriée par Bérard comme une pratique <em>«&nbspanti-hygiénique puisqu’[elle] oblige l’enfant à dormir dans une atmosphère constamment viciée par suite du peu d’espace existant dans le lit des parents&nbsp».</em></p> <br>
 
 <div class="ferme">
-<img src="/images/mega_055.jpg" alt="Intérieur d'une ferme bretonne."/>
+<img src={mega_055} alt="Intérieur d'une ferme bretonne."/>
 <figure>
 <figcaption><em>Dessin représentant la vue d'intérieur d'une ferme. Sur la droite se trouve la cheminée où une
 femme prépare la cuisson dans un grand récipient (elle agite le contenu avec un grand bâton) ; à sa gauche,
@@ -58,7 +62,7 @@ est assis un homme</em>. Milieu du XIX<sup>e</sup> siècle.</figcaption>
 <br>
 
 <div class="berosier">
-<img src="/images/mega_066.jpg" alt="Dessin d'un berceau en osier.">
+<img src={mega_066} alt="Dessin d'un berceau en osier.">
 <figure>
 <figcaption><em>Dessin sur panier représentant une femme de Châteaulin veillant sur un enfant. À ses pieds, on
 distingue un berceau sous la forme d'un panier en osier garni d'une couverture épaisse pour le confort de
@@ -66,7 +70,7 @@ l'enfant</em>. Gravure de la Galerie Armoricaine, vers 1845.</figcaption>
 </figure>
 </div>
 <br>
-<a href="/apropos" class="source" target="_blank">→ Pour aller plus loin, voir nos sources ici ←</a>
+<a href="{base}/apropos" class="source" target="_blank">→ Pour aller plus loin, voir nos sources ici ←</a>
 
 </div>
 
