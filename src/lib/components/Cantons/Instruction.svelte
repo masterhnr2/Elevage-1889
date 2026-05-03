@@ -1,6 +1,8 @@
 
 <script>
     import Audio from "../Audio.svelte";
+    import mega_029 from '$lib/assets/mega_029.jpg'
+    import {base} from '$app/paths'
 
     let dysMode = false;
     
@@ -35,13 +37,12 @@
 <br>
 
 <div class="ecole">
-<img src="/images/mega_029.png" alt="Photographie des élèves d'une école."/>
+<img src={mega_029} alt="Photographie des élèves d'une école."/>
 <figure>
 <figcaption>Les élèves d'une école féminine posent devant leur établissement.</figcaption>
 </figure>
 <br>
-<a href="/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
-
+<a href="{base}/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
 </div>
 
 

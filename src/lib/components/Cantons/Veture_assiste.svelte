@@ -1,6 +1,9 @@
 
 <script>
     import Audio from "../Audio.svelte";
+    import mega_040 from '$lib/assets/mega_040.jpg'
+    import mega_044 from '$lib/assets/mega_044.jpg'
+    import {base} from '$app/paths'
 
     let dysMode = false;
     
@@ -34,7 +37,7 @@
 <br>
 
 <div class="famille">
-<img src="/images/mega_040.jpg" alt="Une famille de fermiers avec sept enfants."/>
+<img src={mega_040} alt="Une famille de fermiers avec sept enfants."/>
 <figure>
 <figcaption>Photographie d'une famille de sept enfants issue du livre <em>Souvenirs de Bretagne</em> (vers 1860) appartenant au Musée de Bretagne aujourd'hui.</figcaption>
 </figure>
@@ -50,7 +53,7 @@
 
 <div class="classe">
 <!-- svelte-ignore a11y_img_redundant_alt -->
-<img src="/images/mega_044.jpg" alt="Photo de classe."/>
+<img src={mega_044} alt="Photo de classe."/>
 <figure>
 <figcaption>Photographie d'un groupe, d'orphelins certainement, entouré de deux sœurs et d'une femme dans le jardin du manoir de Kerbenez à Plomelin vers les années 1860.</figcaption>
 </figure>
@@ -61,7 +64,7 @@
 <br>
 <p> Les enfants assistés, selon l'auteur, <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=1813" target="_blank"><em>«&nbsprencontrent plus de facilités à s'établir dans le pays où ils ont été élevés&nbsp»</em></a>. </p>
 <br>
-<a href="/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
+<a href="{base}/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
 </div>
 
 <style>

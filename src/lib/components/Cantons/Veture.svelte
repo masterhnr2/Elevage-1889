@@ -1,6 +1,10 @@
 
 <script>
     import Audio from "../Audio.svelte";
+    import mega_006 from '$lib/assets/mega_006.jpg'
+    import mega_025 from '$lib/assets/mega_025.jpg'
+    import mega_065 from '$lib/assets/mega_065.jpg'
+    import {base} from '$app/paths'
 
     let dysMode = false;
     
@@ -59,7 +63,7 @@
 
 <p>  Le gilet comme les sabots en photographie sont des habits de costume traditionnel mais ils permettent de visualiser à quoi correspondaient les vêtements d'époque. Ils sont donc plutôt portés le dimanche et les jours de fêtes. Le gilet est en drap de laine noir doublé d'une toile de lin. Il possède une double rangée de boutons dorés en métal. Les boutonnières sont en fils de coton vert, de même pour les deux poches. L'arrière du gilet est quant à lui marron. Les sabots sont aussi de couleur noire avec la partie avant pointue et recourbée. Les semelles et talons ont été renforcés avec des clous. Ces clous maintenaient un fil sur le dessus du pied. </p> 
 <br>
-<a href="/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
+<a href="{base}/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
 </div>
 
 <style>

@@ -1,6 +1,11 @@
 
 <script>
     import Audio from "../Audio.svelte";
+    import mega_046 from '$lib/assets/mega_046.jpg'
+    import mega_075 from '$lib/assets/mega_075.jpg'
+    import mega_077 from '$lib/assets/mega_049.jpg'
+    import mega_049 from '$lib/assets/mega_049.jpg'
+    import {base} from '$app/paths'
 
     let dysMode = false;
     
@@ -29,13 +34,13 @@ Pour Briec, l’auteur donne l’exemple d’une <a href="http://www.collections
 
 <div class="gardiennage_conteneur">
 <div class="chomette">
-<img src="images/mega_046.jpg" alt="Chomette, aide à la marche aussi appelé trotteur."/>
+<img src={mega_046} alt="Chomette, aide à la marche aussi appelé trotteur."/>
 <figure>
 <figcaption>Chomette, mot de la langue gallo pour un trotteur.</figcaption>
 </figure>
 </div>
 <div class="premierpas">
-<img src="images/mega_075.png" alt="Les premiers pas : des enfants en rang avec plusieurs aides à la marche pour les enfants."/>
+<img src={mega_075} alt="Les premiers pas : des enfants en rang avec plusieurs aides à la marche pour les enfants."/>
 <figure>
 <figcaption>Photographie de l'ouvrage d'un groupe d'enfants avec leurs nourrices et des aides à la marche.</figcaption>
 </figure>
@@ -47,13 +52,13 @@ Pour Briec, l’auteur donne l’exemple d’une <a href="http://www.collections
 
 <div class="gardiennage_conteneur">
 <div class="porte">
-<img src="/images/mega_077.png" alt ="Porte à battants très commune dans le Finistère."/>
+<img src={mega_077} alt ="Porte à battants très commune dans le Finistère."/>
 <figure>
 <figcaption>Photographie de l'ouvrage qui montre une femme avec un nourrisson derrière la porte battant et deux hommes devant ainsi qu'un cochon.</figcaption>
 </figure>
 </div>
 <div class="hameau">
-<img src="/images/mega_049.jpg" alt ="Hameau breton."/>
+<img src={mega_049} alt ="Hameau breton."/>
 <figure>
 <figcaption>Hameau breton. La maison la plus à gauche comporte une demi-porte.</figcaption>
 </figure>
@@ -69,7 +74,7 @@ Malgré le développement des soins médicaux, à Quimper la mortalité augmenta
 <p>L'auteur effectue ici un parallèle surprenant avec les enfants américains, lesquels jouaient dans des jardins d’enfants, ces derniers rappelant le champ protégé par des clôtures. Malgré la force reconnue du grand air, il y avait des problèmes de maladies dues à l’environnement proche des champs&nbsp: </p> 
 <p> <a href="http://collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=67" target="_blank"><em>«&nbspMalheureusement les fermes continuent à demeurer entourées de dépôts de fumier qui provoquent des fièvres et engendrent des épidémies.&nbsp»</em></a></p>
 <br>
-<a href="/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
+<a href="{base}/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
 
 </div>
 

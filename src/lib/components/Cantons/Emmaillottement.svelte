@@ -1,6 +1,10 @@
 
 <script>
     import Audio from "../Audio.svelte";
+    import mega_064 from '$lib/assets/mega_064.jpg'
+    import mega_063 from '$lib/assets/mega_063.jpg'
+    import mega_0281 from '$lib/assets/mega_0281.jpg'
+    import {base} from '$app/paths'
 
     let dysMode = false;
     
@@ -67,7 +71,7 @@
 </figure>
 <br>
 
-<a href="/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
+<a href="{base}/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
 
 </div>
 
