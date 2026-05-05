@@ -3,16 +3,11 @@
     import IconeLivre from '$lib/components/Icone_livre.svelte';
     import {base} from '$app/paths';
     import Bibliographie from '$lib/assets/Bibliographie.pdf'
+    import Navbar from '$lib/components/Navbar.svelte';
 
 </script>
 
-<nav>
-<ul>
-    <li><a href="{base}/">Accueil</a></li>
-    <li><a href="{base}/folium">Carte interactive</a></li>
-    <li><a href="{base}/apropos">À propos</a></li>
-</ul>
-</nav>
+<Navbar/>
 
 <div class="bod">
 <h1>Le Master Humanités Numériques</h1>
@@ -61,6 +56,9 @@
 <p>À <strong>Clara</strong> pour avoir trouvé des solutions aux problèmes de coding du site.</p>
 <p>À l'ensemble de <strong>nos proches</strong> mis à contribution.</p>
 <p>Enfin, merci à <strong>tous·tes les curieux·ses</strong> qui s'intéressent à notre projet.</p>
+<br/>
+<br/>
+<br/>
 </div>
 
 <IconeLivre/>
@@ -68,46 +66,11 @@
 
 <style>
 
-    nav{
-        width : 100%;
-        margin : 0 auto;
-        background-color : white;
-        position : sticky;
-        top : 0px;
-    }
-    nav a{
-        display : block;
-        text-decoration : none;
-        color : #be9f82;
-        border-bottom : 2px solid transparent;
-        padding : 10px 0px;
-        font-size : 23px;
-    }
-    nav a:hover{
-        color :#3b2224;
-        border-bottom : 2px solid #be9f82;
-    }
-    nav ul{
-        list-style-type : none;
-        display : flex;
-        justify-content : center;
-        font-family : Verdana, Geneva, Tahoma, sans-serif;
-        font-weight : bold;
-    }
-
-    nav li{
-        width : 25%;
-        text-align : center;
-    }
-    nav ul::after{
-        content : "";
-        display : table;
-        clear : both;
-    }
-
-
     .bod {
         padding-top: 5%;
+        margin-left: 8%;
+        margin-right : 8%;
+        background-color: white;
 
     }
 
@@ -120,7 +83,6 @@
         text-align: center;
         margin-left: 20%;
         margin-right: 20%;
-
         color: #ae9784;
 
     }
@@ -132,20 +94,20 @@
         justify-self : center;
         text-justify: inter-cluster;
         text-align : center;
-        margin-top: 5%;
+        margin : 5% 2% auto 2%;
         color : #696969;
     }
     p{
         font-family : Verdana, Geneva, Tahoma, sans-serif;
         text-justify : inter-cluster;
         text-align : justify;
-        margin-left: 20%;
-        margin-right : 20%;
-        margin-top : 2%;
+        margin-top : 5%;       
+        margin-left: 5%;
+        margin-right : 5%;
     }
     .biblio{
         display : block;
-        margin : 0 auto;
+        margin : 0 8% auto 8%;
         width : fit-content;
         text-align : center;
         padding : 10px 15px;
@@ -157,4 +119,36 @@
     .biblio a{
         color : white;
     }
+
+
+    @media screen and (min-width: 480px) {
+
+    p{
+        font-family : Verdana, Geneva, Tahoma, sans-serif;
+        text-justify : inter-cluster;
+        text-align : justify;
+        margin-top : 2%;
+        margin-left: 9%;
+        margin-right : 9%;
+    }
+
+
+
+    h2 {
+        margin : 2% auto auto auto;
+    }
+
+    .biblio{
+        margin-left: 25%;
+        margin-right : 25%;
+    }
+
+    .bod {
+        margin-left: 12%;
+        margin-right : 12%;
+        margin-top: 5%;
+    }
+
+}
+
 </style>

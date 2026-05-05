@@ -11,6 +11,7 @@ URL : https://masterhnr2.github.io/Elevage-1889/
 - [x] Incorporer le texte des thèmes
 - [x] CSS
 - [x] Debuggage
+- [] Rendre le site un peu responsive
 - [] Test utilisateur
 - [] Integration du son 
 - [] Readme propre avec documenation 

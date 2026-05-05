@@ -6,18 +6,14 @@
     import logobretagne from '$lib/assets/logobretagne.png';
     import logo_hn from '$lib/assets/logo_hn.png';
     import Carte_accueuil from '$lib/assets/Carte_accueuil.jpg';
+    import Navbar from '$lib/components/Navbar.svelte';
+
 
 </script>
 
-<nav>
-<ul>
-    <li><a href="{base}/">Accueil</a></li>
-    <li><a href="{base}/folium">Carte interactive</a></li>
-    <li><a href="{base}/apropos">À propos</a></li>
-</ul>
-</nav>
+<Navbar/>
 
-
+ <!-- style:background-image={`url(${fond})`} -->
 <div class="bod">
 
 <h1><strong>Exposition universelle de 1889 Elevage des enfants du premier âge - Finistère</strong></h1>
@@ -53,58 +49,29 @@
 <IconeLivre/>
 
 <style>
-    nav{
-        width : 100%;
-        margin : 0 auto;
-        background-color : white;
-        position : sticky;
-        top : 0px;
-    }
-    nav a{
-        display : block;
-        text-decoration : none;
-        color : #be9f82;
-        border-bottom : 2px solid transparent;
-        padding : 10px 0px;
-        font-size : 23px;
-    }
-    nav a:hover{
-        color :#3b2224;
-        border-bottom : 2px solid #be9f82;
-    }
-    nav ul{
-        list-style-type : none;
-        display : flex;
-        justify-content : center;
-        font-family : Verdana, Geneva, Tahoma, sans-serif;
-        font-weight : bold;
-    }
 
-    nav li{
-        width : 25%;
-        text-align : center;
-    }
-    nav ul::after{
-        content : "";
-        display : table;
-        clear : both;
-    }
+    :global(body) {
+        background-color: #f3e9d5;
+        background-image:url('$lib/assets/Fond.jpg') ;
+        background-size: cover;
+        }
 
-    .bod {
-        padding-top: 5%;
-
+.bod {
+        padding-top: 1%;
     }
 
     h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 5 vh;
+        font-size: 3vh;
         text-transform: uppercase;
         justify-self: center;
         text-justify: inter-cluster;
         text-align: center;
-        margin-left: 15%;
-        margin-right: 15%;
-        color: #ae9784;
+        margin: 0 15% 5% 15%;
+        color: #99816a;
+        background-color: white;
+        padding: 1.5% 1.5% 1.5% 1.5%;
+        /* color : #ae9784; */
 
     }
     .conteneur{
@@ -112,11 +79,10 @@
         flex-direction: row;
         justify-content : center;
         align-items : flex-start;
-        gap: 2%;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-
+        gap: 3%;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
         padding-bottom: 2%;
     }
     .musee, .hn {
@@ -138,8 +104,13 @@
     }
     .carteacces, .museeacces, .hnacces {
         font-family : verdana, sans-serif, courier, monospace;
-        font-size : x-large;
+        font-size : 1.2rem;
         text-align : center;
+        background-color: white;
+
+        a {
+            color :  #8f755d;
+        }
     }
     .musee:hover, .carte:hover, .hn:hover {
         transform : scale(1.05);
@@ -148,6 +119,41 @@
         width : 100%;
         display : block;
     }
+
+@media screen and (min-width: 480px) {
+
+    h1 {
+        font-size: 3.5vh;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .conteneur{
+        gap: 4%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 2%;
+    }
+
+
+    .carteacces, .museeacces, .hnacces {
+        font-family : verdana, sans-serif, courier, monospace;
+        font-size : 1.7rem;
+        text-align : center;
+        margin-top : 2%;
+    }
+
+    h1 {
+        font-size: 3vh;
+         margin: 1% 30% 2.5% 30%;    
+        }
+
+}
+
 </style>
 
 
