@@ -1,8 +1,7 @@
 <script>
 
-    import IconeLivre from '$lib/components/Icone_livre.svelte';
     import {base} from '$app/paths';
-    import arrowup from '$lib/assets/arrowup.png'
+    import Arrowup from '$lib/components/Arrowup.svelte';
     import Bibliographie from '$lib/assets/Bibliographie.pdf'
     import Navbar from '$lib/components/Navbar.svelte';
     import Montage_apropos from '$lib/assets/Montage/Montage_A_propos.mp3';
@@ -12,6 +11,7 @@
 </script>
 
 <Navbar/>
+<Arrowup/>
 
 <div class="bod">
 
@@ -21,18 +21,14 @@
 
 <div class:dys={dysMode}>
 
-    <!-- Bouton pour remonter en haut de la page-->
-<a href="#" class="btn">
-    <img src={arrowup} alt="" class="icone">
-</a>
 
 <p class="audio_texte"><small>Écoutez la version audio !</small></p>
 <audio controls src={Montage_apropos}>/</audio>
 <br>
-<h1>Pour les plus curieux et curieuses</h1>
+<h1><strong>Pour les plus curieux et curieuses</strong></h1>
 <button class="biblio" type="button"><a href={Bibliographie} target="_blank"> Accédez à la bibliographie utilisée pour le projet</a></button><br>
 
-<h1>Remerciements</h1>
+<h1><strong>Remerciements</strong></h1>
 <h2>Université Rennes 2</h2>
 <p>Tout d'abord, merci à <strong>Karine Karila-Cohen</strong>, <strong>Fabienne Moreau</strong> et <strong>Chloé Guennou</strong>, nos enseignantes et encadrantes pour ce projet.</p>
 <p>Merci également à <strong>Pierre Karila-Cohen</strong> et <strong>Patricia Legris</strong> pour leurs conférences respectives sur l'enquête et la puériculture au XIX<sup>e</sup>&nbspsiècle ainsi que pour leurs réponses à nos nombreuses questions.</p>
@@ -62,7 +58,6 @@
 </div>
 </div>
 
-<IconeLivre/>
 
 
 <style>
@@ -72,7 +67,6 @@
         margin-left: 8%;
         margin-right : 8%;
         background-color: white;
-
     }
 
     h1{
@@ -172,23 +166,6 @@
         text-align : left;
 }
 
-    .btn {
-        height : 100px;
-        width : 100px;
-        border-radius : 50%;
-        display : flex;
-        justify-content : center;
-        align-items : center;
-        position: fixed;
-        right : 20px;
-        bottom : 20px;
-        cursor : pointer;
-    }
-
-    .icone {
-        width : 80px;
-        height : 80px;
-    }
 
     @media screen and (min-width: 480px) {
 

@@ -40,12 +40,12 @@
     }
 
 
-    nav li.icone {
+    .icone {
         position: absolute;
         left: 1rem;
         top: 50%;
         transform: translateY(-50%);
-        width: auto;
+        width: 12%;
         margin: 0;
     }
 
@@ -56,6 +56,8 @@
     padding: 0.75em 0;
     border-bottom: 2px solid transparent;
 }
+
+
 
 nav li.icone a:hover {
     color: #3b2224;
@@ -74,11 +76,13 @@ nav li.icone a:hover {
         margin: 0 3%;
     }
 
-    nav li.icone span {
+    .icone span {
+    visibility: hidden;
     font-size: 1.5rem;
     color: #be9f82;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    padding-right: 10%;
 }
 
 nav li.icone span a:hover{
@@ -121,5 +125,27 @@ nav li.icone span a:hover{
             font-size: 2rem;
             padding: 10px 0;
         }
+
+
+
+        .icone {
+
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: auto;
+        margin: 0;
+    }
+
+        .icone span {
+        visibility: visible;
+        font-size: 1.5rem;
+        padding-right: 25%;
+        padding-left: 5%;
+        text-align: justify;
+    }
+
+
     }
 </style>
