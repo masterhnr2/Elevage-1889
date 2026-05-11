@@ -118,7 +118,7 @@
         height: 100%;
         justify-content: space-evenly;
         width: 100%;
-        background-color: #be9f82;
+        background-color: #e9dccb;
         overflow-y: auto;
 
     }

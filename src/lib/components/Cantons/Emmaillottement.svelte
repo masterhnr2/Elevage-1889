@@ -4,6 +4,7 @@
     import mega_064 from '$lib/assets/mega_064.jpg'
     import mega_063 from '$lib/assets/mega_063.jpg'
     import mega_0281 from '$lib/assets/mega_0281.jpg'
+    import Montage_Emmaillotement from '$lib/assets/Montage/Montage_Emmaillotement.mp3'
     import {base} from '$app/paths'
 
     let dysMode = false;
@@ -11,13 +12,13 @@
 </script>
 
 <Audio
-    chemin={""}
+    chemin={Montage_Emmaillotement}
 />
 
 <!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
-    {dysMode ? 'Mode normal' : 'Mode dyslexie'}
+    {dysMode ? 'Mode dyslexie' : 'Mode normal'}
 </button>
 
 <div class:dys={dysMode}>
@@ -36,13 +37,13 @@
     <div class="paysanne">
         <img src={mega_064} alt="Photographie d'une paysanne et d'une fillette tenant deux bébés emmaillotés.">
         <figure>
-            <figcaption><em>Portait de femme et d'enfant</em>, photographie de Charles et Paul Géniaux, Ploërmel, entre 1900 et 1905 (collections du Musée de Bretagne). Une paysanne et une fillette tiennent chacune dans leurs bras un bébé emmailloté. Les bras des bébés ne sont pas plaqués contre le corps dans le maillot, mais sont enfilés dans des manches nouées sur le devant.</figcaption>
+            <figcaption><em><a href="http://www.collections.musee-bretagne.fr/ark:/83011/FLMjo147962" target="_blank">Portait de femme et d'enfant</a></em>, photographie de Charles et Paul Géniaux, Ploërmel, entre 1900 et 1905 (collections du Musée de Bretagne). Une paysanne et une fillette tiennent chacune dans leurs bras un bébé emmailloté. Les bras des bébés ne sont pas plaqués contre le corps dans le maillot, mais sont enfilés dans des manches nouées sur le devant.</figcaption>
         </figure>
     </div>
     <div class ="bebe">
         <img src={mega_063} alt="Croquis d'un bébé emmailloté.">
         <figure>
-            <figcaption><em>Bébé emmailloté</em>, croquis de Houël Marguerite, première moitié du XX<sup>e</sup>&nbspsiècle (collections du Musée de Bretagne). Puisqu'il ne pouvait pas se débattre, le bébé emmailloté était parfois suspendu à un clou lorsque sa mère devait s'absenter.</figcaption>
+            <figcaption><em><a href="http://www.collections.musee-bretagne.fr/ark:/83011/FLMjo316231" target="_blank">Bébé emmailloté</a></em>, croquis de Houël Marguerite, première moitié du XX<sup>e</sup>&nbspsiècle (collections du Musée de Bretagne). Puisqu'il ne pouvait pas se débattre, le bébé emmailloté était parfois suspendu à un clou lorsque sa mère devait s'absenter.</figcaption>
         </figure>
     </div>
 </div>
@@ -52,10 +53,7 @@
 <br>
 <p><strong>Les enquêteurs déplorent la persistance de cette pratique dans le Finistère.</strong> Outre le fait que <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519889/doc/2272471" target="_blank">
 <em>«&nbsppendant une durée de 7 à 8 mois l'enfant ne pouvait donner aucun exercice à ses membres qui étaient trop étroitement comprimés&nbsp» </em></a>, l'emmaillotement était surtout peu hygiénique. Comme l'enfant n'était changé que 3 à 5 fois par jour, il restait longtemps dans ses excréments, ce qui pouvait entraîner des irritations et des infections.</p><br>
-<p><strong>Néanmoins, l'enquête rapporte plusieurs changements jugés bénéfiques.</strong></p>
-<p>D'abord, l'emmaillotement est moins contraignant. Comme il est précisé pour le canton de Châteauneuf-du-Faou (et pour quasiment tout le département) : <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519889/doc/2272471" target="_blank"><em>«&nbspLes bras sont maintenant laissés libres et les jambes sont moins étroitement serrées.&nbsp»</em></a></p>
-<br>
-<p>Ensuite, la période d'emmaillotement s'est raccourcie. Là où autrefois l'enfant restait dans son maillot pendant 7 à 10 mois, il le quitte désormais vers ses 4 ou 6 mois.</p>
+<p><strong>Néanmoins, l'enquête rapporte plusieurs changements jugés bénéfiques.</strong> D'abord, l'emmaillotement est moins contraignant. Comme il est précisé pour le canton de Châteauneuf-du-Faou (et pour quasiment tout le département) : <a href="http://www.collections.musee-bretagne.fr/flora_rennes/ark:/83011/0031519889/doc/2272471" target="_blank"><em>«&nbspLes bras sont maintenant laissés libres et les jambes sont moins étroitement serrées.&nbsp»</em></a> Ensuite, la période d'emmaillotement s'est raccourcie. Là où autrefois l'enfant restait dans son maillot pendant 7 à 10 mois, il le quitte désormais vers ses 4 ou 6 mois.</p>
 
 <br>
 
@@ -67,7 +65,7 @@
 <div class="ecole">
 <img src={mega_0281} alt="Photographie d'enfants d'une école maternelle.">
 <figure>
-<figcaption><em>Enfants d'une école maternelle</em>, plaque photographique de Jacques de Thezac, Finistère, début du XX<sup>e</sup>&nbspsiècle (collections du Musée départemental breton) <em>[image originale retouchée pour être éclaircie]</em>. Au premier rang, les enfants les plus jeunes portent tous une robe, contrairement aux plus âgés assis derrière eux.</figcaption>
+<figcaption><em><a href="https://musee-breton.finistere.fr/fr/notice/1988-105-1750-enfants-d-une-ecole-maternelle-musee-departemental-breton-ad1e5fed-b885-48f8-99f4-c0bd8a2f721e" target="_blank">Enfants d'une école maternelle</a></em>, plaque photographique de Jacques de Thezac, Finistère, début du XX<sup>e</sup>&nbspsiècle (collections du Musée départemental breton) <em>[image originale retouchée pour être éclaircie]</em>. Au premier rang, les enfants les plus jeunes portent tous une robe, contrairement aux plus âgés assis derrière eux.</figcaption>
 </figure>
 <br>
 
@@ -139,6 +137,10 @@
     line-height: 2;
     letter-spacing: 1.5px;
     word-spacing: 1.5px;
+}
+
+.dys p {
+        text-align : left;
 }
 
     .emmaillottement_conteneur {

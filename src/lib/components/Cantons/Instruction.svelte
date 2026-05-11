@@ -2,6 +2,7 @@
 <script>
     import Audio from "../Audio.svelte";
     import mega_029 from '$lib/assets/mega_029.png'
+    import Montage_Instruction from '$lib/assets/Montage/Montage_Instruction.mp3'
     import {base} from '$app/paths'
 
     let dysMode = false;
@@ -9,13 +10,13 @@
 </script>
 
 <Audio
-    chemin={""}
+    chemin={Montage_Instruction}
 />
 
 <!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
-    {dysMode ? 'Mode normal' : 'Mode dyslexie'}
+    {dysMode ? 'Mode dyslexie' : 'Mode normal'}
 </button>
 
 <div class:dys={dysMode}>
@@ -26,7 +27,7 @@
 
 <h2>Autrefois</h2>
 <br>
-<p>À Brest, une première école publique fut ouverte le 14 mars 1746, suivie par d’autres, qui furent malheureusement progressivement fermées à partir de 1791. Furent nommés vers 1800 cinq instituteurs puis, après de nombreux efforts, le conseil municipal obtint en 1822 la <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=250" target="_blank"><em>«&nbspréinstallation des frères de la doctrine chrétienne&nbsp»</em></a>, une congrégation qui se consacre à l’éducation de la jeunesse, notamment celle des classes populaires. Malgré tout, les moyens mis en place pour l’éducation des enfants restaient très précaires et <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=250" target="_blank"><em>«&nbspdéfectueux&nbsp»</em></a>; avant 1850, ce sont les familles qui décidaient de l'instruction des enfants. En général, elles préféraient compter sur eux pour les aider dans les champs ou, dans de rares cas, les magasins. </p>
+<p>À Brest, une première école publique fut ouverte le 14 mars 1746, suivie par d’autres, qui furent malheureusement progressivement fermées à partir de 1791. Furent nommés vers 1800 cinq instituteurs puis, après de nombreux efforts, le conseil municipal obtint en 1822 la <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=250" target="_blank"><em>«&nbspréinstallation des frères de la doctrine chrétienne&nbsp»</em></a>, une congrégation qui se consacre à l’éducation de la jeunesse, notamment celle des classes populaires. Malgré tout, les moyens mis en place pour l’éducation des enfants restaient très précaires et <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=250" target="_blank"><em>«&nbspdéfectueux&nbsp»</em></a> ; avant 1850, ce sont les familles qui décidaient de l'instruction des enfants. En général, elles préféraient compter sur eux pour les aider dans les champs ou, dans de rares cas, les magasins. </p>
 <p>À Landerneau comme à Brest, les enfants n’allaient pas en classe ou très rarement avant 10 ou 11 ans. L’école avait pour objectif de leur apprendre la lecture du breton et les rudiments du catéchisme&nbsp; à Daoulas, le latin, l’histoire religieuse et des bases de calcul s’ajoutaient à ces deux disciplines.</p>
  <br>
 <h2> Aujourd’hui </h2>
@@ -39,7 +40,7 @@
 <div class="ecole">
 <img src={mega_029} alt="Photographie des élèves d'une école."/>
 <figure>
-<figcaption>Les élèves d'une école féminine posent devant leur établissement.</figcaption>
+<figcaption><a href="https://musee-breton.finistere.fr/fr/notice/1988-105-1738-ecole-primaire-de-filles-musee-departemental-breton-8b55e748-e5a3-4728-8741-ae4c2e16ca5b" target="_blank">Photographie des élèves d'une école féminine</a> qui posent devant leur établissement (collections du Musée départemental Breton).</figcaption>
 </figure>
 <br>
 <a href="{base}/apropos" class="source">→ Pour aller plus loin, voir nos sources ici ←</a>
@@ -110,6 +111,10 @@
     line-height: 2;
     letter-spacing: 1.5px;
     word-spacing: 1.5px;
+}
+
+.dys p {
+        text-align : left;
 }
 
     .ecole {
