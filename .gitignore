@@ -1,23 +1,54 @@
-node_modules
+### Python
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Output
-.output
-.vercel
-.netlify
-.wrangler
-/.svelte-kit
-/build
+# C extensions
+*.so
 
-# OS
-.DS_Store
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# dotenv environment variable files
+.env
+
+# Virtual environments
+.venv
+env/
+venv/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+
+# Type checkers
+.mypy_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+# .python-version
+
+### Windows
+# Windows thumbnail cache files
 Thumbs.db
 
-# Env
-.env
-.env.*
-!.env.example
-!.env.test
+# Folder config file
+[Dd]esktop.ini
 
-# Vite
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
+
+.streamlit
