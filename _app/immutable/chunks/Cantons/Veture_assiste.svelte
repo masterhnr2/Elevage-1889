@@ -3,6 +3,7 @@
     import Audio from "../Audio.svelte";
     import mega_040 from '$lib/assets/mega_040.jpg'
     import mega_044 from '$lib/assets/mega_044.jpg'
+    import Montage_assistes from '$lib/assets/Montage/Montage_assistes.mp3'
     import {base} from '$app/paths'
 
     let dysMode = false;
@@ -10,13 +11,13 @@
 </script>
 
 <Audio
-    chemin={""}
+    chemin={Montage_assistes}
 />
 
 <!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
-    {dysMode ? 'Mode normal' : 'Mode dyslexie'}
+    {dysMode ? 'Mode dyslexie' : 'Mode normal'}
 </button>
 
 <div class:dys={dysMode}>
@@ -25,7 +26,7 @@
 <br> 
 <p>Par «&nbspenfant assisté&nbsp», on entend les enfants placés sous le régime de l'Assistance publique, un ministère dédié à la protection sociale des enfants comme des adultes. Ce sont à la fois des orphelins, des enfants abandonnés ou des enfants maltraités. Pont-L'Abbé et Rosporden sont rattachés par Émile Bérard à Quimper alors que Pont-Croix a ses propres pratiques pour les vêtements des enfants assistés.</p>
 <br>
-<h2> Avant l'enquête par Émile Bérard : une spécifité entre enfants assistés et enfants</h2> 
+<h2> Avant l'enquête par Émile Bérard : une spécificité entre enfants assistés et enfants</h2> 
 <br> 
 <p>Dans son introduction, Émile Bérard écrit <a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=26" target="_blank"><em>«&nbsples règlements administratifs sur les vêtements des enfants assistés stipulaient qu'à l'âge d'un an les commissions hospitalières délivreraient aux pupilles&nbsp»</em></a> une première vêture. L'auteur indique que le renouvellement de la vêture se faisait tous les ans jusqu'à 6 ans puis de même de 6 ans à 12 ans. Certains vêtements étaient obligatoires comme les robes ou les vestes dans le cas où les enfants assistaient aux catéchismes ou allaient à l'école primaire.</p>
 <br>
@@ -39,7 +40,7 @@
 <div class="famille">
 <img src={mega_040} alt="Une famille de fermiers avec sept enfants."/>
 <figure>
-<figcaption>Photographie d'une famille de sept enfants issue du livre <em>Souvenirs de Bretagne</em> (vers 1860) appartenant au Musée de Bretagne aujourd'hui.</figcaption>
+<figcaption>Photographie d'une famille de sept enfants issue du livre <em><a href="http://www.collections.musee-bretagne.fr/ark:/83011/FLMjo149637" target="_blank">Souvenirs de Bretagne</a></em> vers 1860 (Flora, collections du Musée de Bretagne).</figcaption>
 </figure>
 </div>
 <br>
@@ -55,7 +56,7 @@
 <!-- svelte-ignore a11y_img_redundant_alt -->
 <img src={mega_044} alt="Photo de classe."/>
 <figure>
-<figcaption>Photographie d'un groupe, d'orphelins certainement, entouré de deux sœurs et d'une femme dans le jardin du manoir de Kerbenez à Plomelin vers les années 1860.</figcaption>
+<figcaption>Photographie d'un groupe, d'orphelins certainement, entouré de deux sœurs et d'une femme dans le jardin du manoir de Kerbenez à Plomelin issue du livre <em><a href="http://www.collections.musee-bretagne.fr/ark:/83011/FLMjo149637" target="_blank">Souvenirs de Bretagne</a></em> vers 1860 (Flora, collections du Musée de Bretagne).</figcaption>
 </figure>
 </div>
 <br>
@@ -127,6 +128,10 @@
     line-height: 2;
     letter-spacing: 1.5px;
     word-spacing: 1.5px;
+}
+
+.dys p {
+        text-align : left;
 }
 
     .famille, .classe {

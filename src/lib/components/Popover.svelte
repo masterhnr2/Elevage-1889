@@ -99,27 +99,42 @@
 
                 } */
 
-                .lightboxContainer {
-                    align-items: center;
-                    bottom: 0;
-                    top: 0;
-                    display: flex;
-                    justify-content: center;
-                    left: 65%;
-                    position: fixed;
-                }
+    .lightboxContainer {
+        align-items: center;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        left: 45%;
+        position: fixed;
+    }
 
 
 
-                #boite {
-                    align-items: flex-start();
-                    display: flex;
-                    flex-direction: column;
-                    height: 100%;
-                    justify-content: space-evenly;
-                    width: 100%;
-                    background-color: #be9f82;
-                    overflow-y: auto;
+    #boite {
+        align-items: flex-start();
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        width: 100%;
+        background-color: #e9dccb;
+        overflow-y: auto;
 
-                    }
+    }
+
+
+ @media screen and (min-width: 768px) {
+
+    .lightboxContainer {
+        align-items: center;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        left: 65%;
+        position: fixed;
+    }
+}
+
                 </style>

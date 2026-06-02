@@ -4,6 +4,7 @@
     import mega_006 from '$lib/assets/mega_006.jpg'
     import mega_025 from '$lib/assets/mega_025.png'
     import mega_065 from '$lib/assets/mega_065.jpg'
+    import Montage_vetures from '$lib/assets/Montage/Montage_vêtures.mp3'
     import {base} from '$app/paths'
 
     let dysMode = false;
@@ -11,19 +12,19 @@
 </script>
 
 <Audio
-    chemin={""}
+    chemin={Montage_vetures}
 />
 
 <!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
-    {dysMode ? 'Mode normal' : 'Mode dyslexie'}
+    {dysMode ? 'Mode dyslexie' : 'Mode normal'}
 </button>
 
 <div class:dys={dysMode}>
 
 <h1> Les vêtures des enfants à Lesneven, Plabennec et Ouessant : l'avènement du costume breton par ville </h1>
-<p>Cantons au nord de Brest, les villes de Lesneven et Plabennec ainsi que l'île de Ouessant n'ont pas les mêmes traditions en terme de vêtures avant 1860. Par «&nbspvêtures&nbsp» , on entend les vêtements des enfants après environ 6 ans. En général, les vêtements sont des versions miniatures de ceux des adultes. Avant cet âge, ils sont les mêmes peu importe le sexe de l'enfant. </p> 
+<p>Cantons au nord de Brest, les villes de Lesneven et Plabennec ainsi que l'île de Ouessant n'ont pas les mêmes traditions en terme de vêtures avant 1860. Par «&nbspvêtures&nbsp», on entend les vêtements des enfants après environ 6 ans. En général, les vêtements sont des versions miniatures de ceux des adultes. Avant cet âge, ils sont les mêmes peu importe le sexe de l'enfant. </p> 
 <br>
 <h2> Avant l'enquête de Bérard, déjà une distinction entre ville et campagne</h2> 
 <br>
@@ -35,7 +36,7 @@
 <div class="femmes">
 <img src={mega_006} alt="Photographie de deux femmes et un garçon portant une casquette de marin.">
 <figure>
-<figcaption>Photographie de deux femmes et un jeune garçon en costumes traditionnels prises par Marc Grazillier au début du XX<sup>e</sup>&nbspsiècle sur l'île d'Ouessant.</figcaption>
+<figcaption><a href="https://archives.mairie-brest.fr/4DCGI/Web_VoirLaNotice/34_01/2Fi17975/%20Ouessant/ILUMP17594" target="_blank">Photographie de deux femmes et un jeune garçon en costumes traditionnels</a> prises par Marc Grazillier au début du XX<sup>e</sup>&nbspsiècle sur l'île d'Ouessant (collections des archives de Brest).</figcaption>
 </figure>
 </div>
 <br>
@@ -48,13 +49,13 @@
 <div class="gilet">
 <img src={mega_025} alt="Gilet d'enfant de Carhaix exposé au musée breton de Quimper">
 <figure>
-<figcaption>Gilet d'enfant de Carhaix.</figcaption>
+<figcaption><a href="https://musee-breton.finistere.fr/fr/notice/1954-205-2-gilet-groupe-de-carhaix-musee-departemental-breton-49a7f03a-42c5-41c3-a1c9-dc8477dcb4aa" target="_blank">Gilet d'enfant de Carhaix</a> (collections du Musée départemental Breton).</figcaption>
 </figure>
 </div>
 <div class ="sabots">
 <img src={mega_065} alt="Sabots d'enfant de 1907.">
 <figure>
-<figcaption>Sabots d'enfants de 1907 exposés au Musée de Bretagne.</figcaption>
+<figcaption><a href="http://www.collections.musee-bretagne.fr/ark:/83011/FLMjo220471" target="_blank">Sabots d'enfants de 1907</a> (collections du Musée de Bretagne).</figcaption>
 </figure>
 </div>
 </div>
@@ -114,6 +115,10 @@
     word-spacing: 1.5px;
 }
 
+.dys p {
+        text-align : left;
+}
+
     .source {
     display : block;
     text-align : center;
@@ -161,6 +166,8 @@
 
         figure {
         text-align : center;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 
 </style>

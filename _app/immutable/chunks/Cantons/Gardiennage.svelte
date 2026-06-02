@@ -5,6 +5,7 @@
     import mega_075 from '$lib/assets/mega_075.png'
     import mega_077 from '$lib/assets/mega_077.png'
     import mega_049 from '$lib/assets/mega_049.jpg'
+    import Montage_Gardiennage from '$lib/assets/Montage/Montage_Gardiennage.mp3'
     import {base} from '$app/paths'
 
     let dysMode = false;
@@ -12,13 +13,13 @@
 </script>
 
 <Audio
-    chemin={""}
+    chemin={Montage_Gardiennage}
 />
 
 <!-- Bouton mode dyslexique -->
 
 <button class="dysbouton" on:click={() => dysMode = !dysMode}>
-    {dysMode ? 'Mode normal' : 'Mode dyslexie'}
+    {dysMode ? 'Mode dyslexie' : 'Mode normal'}
 </button>
 
 <div class:dys={dysMode}>
@@ -36,13 +37,13 @@ Pour Briec, l’auteur donne l’exemple d’une <a href="http://www.collections
 <div class="chomette">
 <img src={mega_046} alt="Chomette, aide à la marche aussi appelé trotteur."/>
 <figure>
-<figcaption>Chomette, mot de la langue gallo pour un trotteur.</figcaption>
+<figcaption><a href="http://www.collections.musee-bretagne.fr/ark:/83011/FLMjo218552" target="_blank">Chomette</a>, mot de la langue gallo pour un trotteur (collections Musée de Bretagne).</figcaption>
 </figure>
 </div>
 <div class="premierpas">
 <img src={mega_075} alt="Les premiers pas : des enfants en rang avec plusieurs aides à la marche pour les enfants."/>
 <figure>
-<figcaption>Photographie de l'ouvrage d'un groupe d'enfants avec leurs nourrices et des aides à la marche.</figcaption>
+<figcaption><a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=15" target="_blank">Photographie de l'ouvrage (p.16)</a> d'un groupe d'enfants avec leurs nourrices et des aides à la marche.</figcaption>
 </figure>
 <br>
 </div>
@@ -54,13 +55,13 @@ Pour Briec, l’auteur donne l’exemple d’une <a href="http://www.collections
 <div class="porte">
 <img src={mega_077} alt ="Porte à battants très commune dans le Finistère."/>
 <figure>
-<figcaption>Photographie de l'ouvrage qui montre une femme avec un nourrisson derrière la porte battant et deux hommes devant ainsi qu'un cochon.</figcaption>
+<figcaption><a href="http://www.collections.musee-bretagne.fr/zoom.php?q=id:jo506404&nostat=T&marginMin=0&marginMax=0&curPage=16" target="_blank">Photographie de l'ouvrage (p.17)</a> qui montre une femme avec un nourrisson derrière la porte battant et deux hommes devant ainsi qu'un cochon.</figcaption>
 </figure>
 </div>
 <div class="hameau">
 <img src={mega_049} alt ="Hameau breton."/>
 <figure>
-<figcaption>Hameau breton. La maison la plus à gauche comporte une demi-porte.</figcaption>
+<figcaption><a href="http://www.collections.musee-bretagne.fr/ark:/83011/FLMjo273721" target="_blank">Hameau breton</a>. La maison la plus à gauche comporte une demi-porte (collections du Musée de Bretagne).</figcaption>
 </figure>
 </div>
 </div>
@@ -141,6 +142,10 @@ Malgré le développement des soins médicaux, à Quimper la mortalité augmenta
     line-height: 2;
     letter-spacing: 1.5px;
     word-spacing: 1.5px;
+}
+
+.dys p {
+        text-align : left;
 }
 
 
