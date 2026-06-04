@@ -13,7 +13,7 @@ URL : https://masterhnr2.github.io/Elevage-1889/
 
 # Ressources et Informations : 
 
-> **Document de synthèse :** [pdf] ()
+> **Document de synthèse :** [pdf](https://github.com/masterhnr2/Elevage-1889/blob/ce9f7bdcd9a5e5a70dc431c3b165a678da4530f4/documentation/Document%20de%20synth%C3%A8se_Github.pdf)
 
 > **Résumé de l'ouvrage :** [pdf](https://github.com/masterhnr2/Elevage-1889/blob/c16f36fc451f730f7ead5959a79b8e31bc018913/documentation/resumes_ouvrage.pdf)
 
