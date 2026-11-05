@@ -6,7 +6,7 @@
 <nav>
   <ul>
     <li class="icone">
-      <a href="http://www.collections.musee-bretagne.fr/ark:/83011/FLMjo506404" target="_blank">
+      <a href="https://www.collections.musee-bretagne.fr/item/739014" target="_blank">
         <img src={Livre} alt="Icône livre">
         <span>Version numérique de l'ouvrage</span>
       </a>
